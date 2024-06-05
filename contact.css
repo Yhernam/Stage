@@ -1,0 +1,35 @@
+.cadre{
+    display: flex;
+    padding: 1.5em;
+    background-color: rgb(26, 66, 100);
+    color: rgb(240, 230, 209);
+    border-radius: 2%;
+}
+.section-padding {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+ 
+}
+body {
+    overflow-x: hidden;
+    background: #f0e6d1;
+    color: #050d13;
+    font-family: Inter, sans-serif;
+}
+.contact-page-text {
+    
+}
+.case{
+    border: 3px solid #f0e6d1;
+    border-color: #f0e6d1;
+}
+
+#contact-section{
+    width: 50%;
+    margin: auto;
+}
