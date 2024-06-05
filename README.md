@@ -1,4 +1,12 @@
 # Site Web #
-Site Vitrine
-1. Modifier Footer + Header
-2. Navbar :
+
+### Site Vitrine ###
+
+Pages :
+- Accueil
+- Catalogue de formation
+- Nous contacter
+- Qui sommes-nous ?
+- Mon espace
+
+( + navbar + footer )
