@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #F0E6D1;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 0 10px #00000067;
+}
+
+.navbar a {
+  color: #1a4264;
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
+}
+
+.navbar .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    color: #1a4264;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    backface-visibility: hidden;
+    border: 0.3rem solid transparent;
+    border-radius: 3rem;
+  }
+  .navbar .btn {
+      border-color: #1a4264;
+      transition: background-color 0.3s ease-in-out;
+  }
+    
+  .navbar .btn:hover {
+    color: #F0E6D1;
+    background-color: #1a4264;
+  }
+
+
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-right: 10px;
+    left: 10px;
+}
+
+
+.mySlides {
+    display:none;
+    align-items: center;
+}
+
+.display-left {
+    position:absolute;
+    top:50%;
+    left:0%;
+    transform:translate(0%,-50%);
+    -ms-transform:translate(-0%,-50%);
+    width: 10%;
+}
+
+.display-right {
+    position:absolute;
+    top:50%;
+    right:0%;
+    transform:translate(0%,-50%);
+    -ms-transform:translate(0%,-50%);
+}
+
+.button {
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bolder;
+    unicode-bidi: isolate;
+    text-align: center;
+}
+
+.title-b {
+    color: #F0E6D1;
+    font-size: 2.5rem;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bolder;
+    unicode-bidi: isolate;
+    text-align: center;
+}
+
+.text {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    display: block;
+    text-align: center;
+}
+
+.text-b {
+    color: #F0E6D1;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    display: block;
+    text-align: center;
+}
+
+.ent {
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: rgb(26, 66, 100);
+}
+
+.gras {
+    font-weight: bold;
+}
+
+.contact {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 2rem;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #F0E6D1;
+    backface-visibility: hidden;
+    border: 0.3rem solid transparent;
+    border-radius: 3rem;
+  }
+  .contact {
+    border-color: #F0E6D1;
+    transition: background-color 0.3s ease-in-out;
+    margin: 110px;
+  }
+    
+  .contact:hover {
+    background-color: #F0E6D1;
+    color: #1a4264;
+  }
+
+.bg {
+    background-color: #1a4264;
+}
+  
+.logo {
+    width: 2%;
+}
+
+.logo-e {
+  width: 5%;
+  margin-left: 20px;
+}
+
+.img {
+    box-shadow: 0 0 10px #00000067;
+    border-radius: 10px;
+}
+
+
+
+
+
+.footer-contact {
+    background: #cbcbcb67;
+    text-align: left;
+    padding: 25px;
+    margin-top: 100px;
+    padding-left: 40px;
+}
+
+.footer {
+    background: rgb(26, 66, 100);
+    color: #fff;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey; 
+    border-radius: 5px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: rgb(201, 201, 201); 
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(147, 147, 147);
+  }
+
+
+
+
+@media screen and (min-width: 80rem) {
+    .container {
+      margin: 1em 2em;
+    }
+  }
