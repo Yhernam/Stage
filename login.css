@@ -1,0 +1,156 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+form{
+    background-color: rgb(34, 13, 87);
+    color: antiquewhite;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    flex: auto;
+}
+
+.barre{
+    width: 100%;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:rgb(235, 224, 189);
+}
+
+.contact{
+    
+    background-color: rgb(228, 179, 118);
+    height: 100px;
+}
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(34, 13, 87);
+    color: antiquewhite;
+    padding: 10px ;
+}
+
+.button_connexion {
+    color: antiquewhite;
+    background-color: rgb(217, 170, 15);
+    width: 200px;
+    max-width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border-color: antiquewhite;
+    
+    
+}
+
+h3{
+    font-size:larger;
+    font-style: italic;
+    font-weight: bolder;
+}
+.texte_bas {
+    font-size: small;
+}
+
+
+.icon {
+    width: 40px;
+    background-color: antiquewhite;
+    border-radius: 50%;
+}
+
+.bouton_reseau {
+    height: 40px;
+    width: auto;
+    border-radius: 40px;
+    color: antiquewhite;
+    font-weight: bold;
+}
+
+.whatsapp {
+    background-color: rgb(55, 173, 16);
+}
+
+.facebook {
+    background-color: rgb(24, 155, 195);
+}
+
+.linkedin {
+    background-color: rgb(30, 103, 205);
+}
+
+.instagram {
+    background: linear-gradient(90deg, rgba(0,219,255,0.510329131652661) 3%, rgba(191,116,161,0.9977240896358543) 54%);
+}
+
+
+@media (max-width: 576px) {
+    form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .barre {
+        max-width: 100%;
+    }
+
+    .button_connexion {
+        width: 100%;
+    }
+
+    .contact {
+        padding: 10px;
+    }
+
+    .contact .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact .row > div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .bouton_reseau {
+        max-width: 100px;
+    }
+}
+
+/* Moyen écran (jusqu'à 768px) */
+@media (max-width: 768px) {
+    .texte_bas, .contact p {
+        font-size: 0.9rem;
+    }
+
+    .contact h3 {
+        font-size: 1.2rem;
+    }
+
+    .button_connexion {
+        width: 100%;
+    }
+
+    .barre {
+        max-width: 100%;
+    }
+
+    .bouton_reseau {
+        max-width: 120px;
+    }
+}
