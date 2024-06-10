@@ -20,8 +20,129 @@ body {
     background: #f0e6d1;
     font-family: Inter, sans-serif;
 }
-.centrage {
-    display: grid;
-    place-items: center;
-    height: 40vh; /* ou une autre hauteur spécifique */
+.centrage{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.icon_mail{
+    width: 5%;
+}
+
+.no-link-style {
+    text-decoration: none; /* Enlève le soulignement */
+    color: inherit; /* Utilise la couleur du texte environnant */
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+}
+.no-link-style img {
+    margin-right: 10px; /* Espace entre l'icône et le texte */
+}
+.no-link-style p {
+    margin: 0; /* Enlève les marges par défaut du paragraphe */
+}
+.icon_add{
+    width: 5%;
+}
+
+.info_entr ul {
+    list-style-type: none; /* Enlève les points de la liste */
+    padding: 0; /* Enlève le padding par défaut de la liste */
+    
+}
+
+.info_entr li {
+    margin-bottom: 15px; /* Ajoute un espacement entre les éléments de la liste */
+}
+
+
+.first_title{
+    color: rgb(26, 66, 100);
+    text-align: center;
+
+}
+
+
+
+
+
+/* PROGRESS-BAR */
+.progress-bar {
+    width: 0;
+    height: 30px;
+    background-color: rgb(26, 66, 100);
+
+
+}
+.progress-bar.animation {
+    width: 100%;
+    transition: width 1s;
+}
+.progress-text{
+    color: aliceblue;
+
+}
+.progress-bar.show-text .progress-text {
+    display: block;
+}
+
+/* Tentative alignement de RETROUVEZ NOUS + QUI SOMMES NOUS */
+.alignement1, .alignement2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+}
+ul {
+    margin-bottom: 20px; /* Ajustez cette valeur pour augmenter l'espacement */
+}
+
+
+
+
+
+
+
+/* HOVER  */
+a {
+    background-image: linear-gradient(
+      to right,
+      rgb(26, 66, 100),
+      rgb(26, 66, 100) 50%,
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;/* pour les anciennes verions de certains navigateurs*/
+    background-clip:text;
+
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:before {
+    content: '';
+    background:rgb(26, 66, 100);
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:hover {
+   background-position: 0;
+  }
+  
+  a:hover::before {
+    width:100%;
   }
