@@ -68,6 +68,11 @@
   box-shadow: 0 0 10px #00000067;
 }
 
+.bold {
+  font-weight: bold;
+  color: #1A4264;
+}
+
 .carousel {
   position: relative;
   text-align: center;
@@ -82,8 +87,13 @@
 }
 
 footer .credit {
-  opacity: 40%;
+  opacity: 20%;
   color: black;
+}
+
+footer .credit-link {
+  opacity: 55%;
+  color: #1A4264;
 }
 
 .centered {
@@ -91,12 +101,6 @@ footer .credit {
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.carousel-icon {
-  background-color: rgba(0, 0, 0, 0.413);
-  padding: 7%;
-  border-radius: 10%;
 }
 
 .btn-img {
@@ -115,6 +119,10 @@ footer .credit {
   text-shadow: 0 0 10px #00000040;
 }
 
+.social {
+  color: #1A4264;
+}
+
 .darkmode--activated .title-img {
   color: #E5BD9B;
 }
@@ -129,6 +137,14 @@ footer .credit {
 
 .darkmode--activated .credit {
   color: #fff;
+}
+
+.darkmode--activated .credit-link {
+  color: #E5BD9B;
+}
+
+.darkmode--activated .bold-center {
+  color: #E5BD9B;
 }
 
 ::-webkit-scrollbar {
