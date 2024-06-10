@@ -4,85 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="contact.css">
-    <title>NK-Formation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Nous Contacter</title>
 </head>
 <body>
+
 <div class="container section-padding">
+
     <div class="row" >
-        <div class="col-md-6 contact-page-text" id="contact-section">
+        <div class="col-md-5 col-sm-11 animate__animated animate__backInLeft" id="contact-section">
             <div>
-                <h1>Nous contacter</h1>
+                <h1 class="contact-title"><strong>Nous contacter.</strong></h1>
             </div>
-            <div>
+
                 <p>Remplissez le formulaire et nos responsables pédagogiques vous répondront sous 30 min maximum ! </p>
-            </div>
-            <div>
-                <p>Ils vous guideront et vous aideront a trouver LA formation dont vous avez besoin.</p>
-            </div>
-            <div>
+            
+                <p>Ils vous guideront et vous aideront à trouver <strong>LA</strong> formation dont vous avez besoin.</p>
+           
                 <p>Si vous voulez joindre directement nos conseillers formations :</p>
-            </div>
-            <div>
-                <p>Du lundi au vendredi, dont les jours fériés, de <strong>9h à 19h</strong><br> <strong>07 82 71 47 54</strong></p>
-            </div>
-            <div>
-                <p>Par email : <strong>contact@nkformationfrance.fr</strong></p>
-            </div>
-            <div>
+            
+                <p>Du lundi au vendredi, dont les jours fériés, de <strong>9h à 19h</strong><br>
+                    <a href="tel:+33782714754" class="no-link-style" target="_blank"> <strong>07 82 71 47 54</strong></a></p><br>
+           
+                <p>Par email : <a href="mailto:contact@nkformationfrance.fr" class="no-link-style" target="_blank"> <strong>contact@nkformationfrance.fr</strong></a></p><br>
+            
                 <p>Partenariat<br> Autres questions ?</p>
-            </div>
+            
         </div>
 
 
-        <div class="col-md-6 cadre">
+        <div class="col-md-5 col-sm-12 cadre">
             <form class>
-                <h3> Ecrivez-nous</h3>
+                <h3 class="titre_text animate__animated animate__jello"> Ecrivez-nous</h3>
                 <div class="form-row row">
-                    <div class="form-group col-md-6">
-                        <label for="prenom">Prénom</label>
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="prenom">Prénom :</label>
                         <input type="text" name="prenom" id="prenom" class="form-control case" required value>
                     </div>
-                    <div class="form-group col-md-6">
-                        <label for="nom">Nom</label>
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="nom">Nom :</label>
                         <input type="text" name="nom" id="nom" class="form-control case" required value>
                     </div>
                 </div>
                 <div class="form-row row">
-                    <div class="form-group col-md-6">
-                        <label for="email">Email</label>
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="email">Email :</label>
                         <input type="email" name="email" id="email" class="form-control case" required value>
                     </div>
-                    <div class="form-group col-md-6">
-                        <label for="tel">Numéro de télephone</label>
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="tel">Télephone :</label>
                         <input type="tel" name="tel" id="tel" class="form-control case" required value>
                     </div>
                 </div>
                 <div class="form-row row">
-                    <div class="form-group col-md-6">
-                        <label for="formationSouhaitée">Formation Souhaitée</label>
-                        <input type="text" name="formationSouhaitée" id="formationSouhaitée" class="form-control case" required value>
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="formation">Formation :</label>
+                        <select class="form-select case" aria-label="Default select example">
+                            <option selected>...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
                     </div>
-                    <div class="form-group col-md-6">
-                        <label for="SoldeCPF">votre Solde CPF</label>
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="SoldeCPF">Solde CPF :</label>
                         <input type="number" name="SoldeCPF" id="SoldeCPF" class="form-control case" required value>
                     </div>
                 </div>
-                <!-- ligne en dessous correct -->
+                <!-- à voir si possiblité de retiré les deux partie date et heure du rappel car inutile (recontacté sous 30min + cela se refera par mail/message donc inutile de spécifier un RDV pour cela) -->
                 <div class="form-row row">
-                    <div class="form-group col-md-6">
-                        <label for="DRappel">Date du Rappel</label>
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="DRappel">Date du Rappel :</label>
                         <input type="date" name="DRappel" id="DRappel" class="form-control case" required value>
                     </div>
-                    <div class="form-group col-md-6">
-                        <label for="heureRappel">Heure du Rappel</label>
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="heureRappel">Heure du Rappel :</label>
                         <input type="time" name="HRappel" id="HRappel" class="form-control case" required value>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="form-group col-md-8">
-                        <label for="msg">Message</label>
+                    <div class="form-group col-md-8 mb-3">
+                        <label for="msg">Message :</label>
                         <textarea type="text" name="msg" id="msg" class="form-control case" required ></textarea>
                     </div>
                 </div>
@@ -97,7 +100,7 @@
 </div>
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
 </html>
