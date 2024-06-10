@@ -4,17 +4,20 @@ html, body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    
 }
 
 body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgb(237, 234, 227);
+    font-family: sans-serif;
+    background-image: url(images/login.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
 }
 
 nav{
-    
     height: 10vh;
     margin: auto;
 }
@@ -22,17 +25,23 @@ header{
     background-color: #ffffff;
 }
 
+h3{
+    width: 350px;
+}
+
 .nav-masthead .nav-link {
     color:#1A4264;
     border-bottom: .25rem solid transparent;
-    margin-top: 0;
+    margin-top: 4%;
     margin-bottom: 0;
+    
   }
   
   .nav-masthead .nav-link:hover,
   .nav-masthead .nav-link:focus {
     border-bottom-color: #1A4264;
     color:#1A4264;
+    
   }
   
   .nav-masthead .nav-link + .nav-link {
@@ -62,6 +71,7 @@ form {
     padding: 30px;
     border-radius: 10px;
     margin-top: 0; 
+    height: 240px;
 }
 
 .barre {
@@ -80,6 +90,11 @@ form {
     border-radius: 10px;
     border-color: antiquewhite;
 }
+
+    .button_connexion:active{
+        background-color: burlywood;
+    }
+    
 
 footer {
     width: 100%;
@@ -102,7 +117,7 @@ footer {
 }
 
 .logo {
-    width: 10%;
+    width: 20%;
 }
 
 .logo-e {
