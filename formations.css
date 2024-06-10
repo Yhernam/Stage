@@ -1,0 +1,42 @@
+.title {
+    margin: 100px;
+}
+
+.accordion {
+    margin-bottom: 200px;
+}
+
+.accordion .accordion-button {
+    font-weight: bold;
+    font-size: 25px;
+    color: #1A4264;
+}
+
+.accordion .accordion-button:hover {
+    background-color: #1A4264;
+    color: #E5BD9B;
+    border: solid rgba(0, 0, 0, 0.132);
+}
+
+.accordion .accordion-button:focus {
+    background-color: #1A4264;
+    color: #E5BD9B;
+    border: solid rgba(0, 0, 0, 0.132);
+}
+
+.darkmode--activated .accordion-button {
+    background-color: black;
+    color: #E5BD9B;
+}
+
+.darkmode--activated .accordion-button:hover {
+    background-color: #E5BD9B;
+    color: #1A4264;
+    border: solid rgba(0, 0, 0, 0.132);
+}
+
+.darkmode--activated .accordion-button:focus {
+    background-color: #E5BD9B;
+    color: #1A4264;
+    border: solid rgba(0, 0, 0, 0.132);
+}
