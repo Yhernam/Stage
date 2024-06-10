@@ -1,5 +1,4 @@
 .cadre{
-    display: flex;
     padding: 1.5em;
     background-color: rgb(26, 66, 100);
     color: rgb(240, 230, 209);
@@ -13,17 +12,14 @@
     margin: 0 auto;
     max-width: 1280px;
     width: 90%;
- 
+
 }
 body {
     overflow-x: hidden;
     background: #f0e6d1;
-    color: #050d13;
     font-family: Inter, sans-serif;
 }
-.contact-page-text {
-    
-}
+
 .case{
     border: 3px solid #f0e6d1;
     border-color: #f0e6d1;
@@ -32,4 +28,59 @@ body {
 #contact-section{
     width: 50%;
     margin: auto;
+}
+.contact-title{
+    color: rgb(26, 66, 100);
+    text-align: center;
+}
+
+.no-link-style {
+    text-decoration: none; /* Enlève le soulignement */
+    color: inherit; /* Utilise la couleur du texte environnant */
+}
+
+/* HOVER  */
+a {
+    background-image: linear-gradient(
+      to right,
+      rgb(26, 66, 100),
+      rgb(26, 66, 100) 50%,
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;/* pour les anciennes verions de certains navigateurs*/
+    background-clip:text;
+
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:before {
+    content: '';
+    background:rgb(26, 66, 100);
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:hover {
+   background-position: 0;
+  }
+  
+  a:hover::before {
+    width:100%;
+  }
+
+.titre_text{
+    text-align: center;
 }
