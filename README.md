@@ -1,17 +1,17 @@
-# Documentation du stage #
-## Semaine 1 & 2 (5 mai 2024 - .. mai 2024) ##
+# Création d'un site vitrine dans le cadre d'un stage. #
 
-### Création du site vitrine ###
-**Mission :** Réalisation d'un nouveau site vitrine qui remplacera l'ancien : [NK Formation France](https://nkformationfrance.fr/).
+## Ce que le projet fait ? ##
+Le projet est la mise en place d'une mise un jour du site [NK Formation France](https://nkformationfrance.fr/).
 
-> [!NOTE]
-> Exigences à respecter : même couleurs, même logo, mettre un carrousel sur l'acceuil, plus moderne.
+## Pourquoi le projet est utile ? ##
+Le projet permet une meilleure maîtrise des langages de programmation (HTML, CSS, PHP...) et de Bootstrap.
 
-1. Récupération des informations et répartition des pages.
+## Prise en main du projet par les utilisateurs. ##
+Dans un premier, chacun à eu la responsabilité sur la création d'une page.
+Ensuite, une navbar et un footer commun a été créé afin de permettre une unité dans le projet.
+Chacun a demandé à autrui de l'aide pour effectuer des tâches et améliorer quelques détails.
 
-Les différentes pages du site :
-- Accueil (présentation de l'organisme et ses points principaux)
-- Catalogue de formations (présentation des différentes formations proposées par l'organisme)
-- Nous contacter (formulaire de contact)
-- Qui sommes-nous ? (présentation plus poussée de l'organisme)
-- Mon espace (formulaire de connexion)
+## Qui maintient et contribue au projet ? ##
+- [Yhernam](https://github.com/Yhernam)
+- [Sanitikhan](https://github.com/Sanitikhan)
+- [Aresaritz](https://github.com/Aresaritz)
