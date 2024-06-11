@@ -24,11 +24,17 @@ form {
     padding: 30px;
     border-radius: 2%;
     margin: 200px; 
-    height: 240px;
+    height: 290px;
 }
 
 form .btn {
     background-color: #fff;
+    border-color: #000;
+    color: #000;
+}
+
+form .btn:hover {
+    background-color: #d2d1d1;
     border-color: #000;
     color: #000;
 }
