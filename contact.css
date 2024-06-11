@@ -1,7 +1,7 @@
 .cadre{
     padding: 1.5em;
-    background-color: rgb(26, 66, 100);
-    color: rgb(240, 230, 209);
+    background-color: #1A4264;
+    color: #fff;
     border-radius: 2%;
 }
 .section-padding {
@@ -12,8 +12,14 @@
     margin: 0 auto;
     max-width: 1280px;
     width: 90%;
-
 }
+
+.row .btn {
+    background-color: #fff;
+    border-color: #000;
+    color: #000;
+}
+
 body {
     overflow-x: hidden;
     background: #f0e6d1;
@@ -29,24 +35,10 @@ body {
     width: 50%;
     margin: auto;
 }
-.contact-title{
-    color: rgb(26, 66, 100);
-    text-align: center;
-}
-
-.no-link-style {
-    text-decoration: none; /* Enlève le soulignement */
-    color: inherit; /* Utilise la couleur du texte environnant */
-}
 
 /* HOVER  */
-a {
-    background-image: linear-gradient(
-      to right,
-      rgb(26, 66, 100),
-      rgb(26, 66, 100) 50%,
-      #000 50%
-    );
+.effet {
+    color: #1A4264;
     background-size: 200% 100%;
     background-position: -100%;
     display: inline-block;
@@ -55,15 +47,14 @@ a {
     -webkit-background-clip: text;
     -moz-background-clip: text;/* pour les anciennes verions de certains navigateurs*/
     background-clip:text;
-
-    -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     transition: all 0.3s ease-in-out;
+    text-decoration: none;
   }
   
-  a:before {
+  .effet:before {
     content: '';
-    background:rgb(26, 66, 100);
+    background:#1A4264;
     display: block;
     position: absolute;
     bottom: -3px;
@@ -73,14 +64,35 @@ a {
     transition: all 0.3s ease-in-out;
   }
   
-  a:hover {
+  .effet:hover {
    background-position: 0;
+   background-image: linear-gradient(
+      to right,
+      #1A4264,
+      #1A4264,
+      #1A4264 50%,
+      #000 50%
+    );
   }
   
-  a:hover::before {
+ .effet:hover::before {
     width:100%;
   }
 
 .titre_text{
     text-align: center;
+}
+
+.darkmode--activated .effet {
+    background-image: linear-gradient(
+      to right,
+      #f0e6d1,
+      #f0e6d1,
+      #f0e6d1 50%,
+      #000 50%
+    );
+}
+
+.darkmode--activated .effet:before {
+    background: #f0e6d1;
 }

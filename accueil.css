@@ -123,6 +123,14 @@ footer .credit-link {
   color: #1A4264;
 }
 
+.darkmode--activated .title {
+  color: #E5BD9B;
+}
+
+.darkmode--activated .bold {
+  color: #E5BD9B;
+}
+
 .darkmode--activated .title-img {
   color: #E5BD9B;
 }
