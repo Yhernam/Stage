@@ -123,6 +123,61 @@ footer .credit-link {
   color: #1A4264;
 }
 
+/* HOVER  */
+.effet {
+  color: #1A4264;
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;/* pour les anciennes verions de certains navigateurs*/
+  background-clip:text;
+  -moz-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.effet:before {
+  content: '';
+  background:#1A4264;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.effet:hover {
+ background-position: 0;
+ background-image: linear-gradient(
+    to right,
+    #1A4264,
+    #1A4264,
+    #1A4264 50%,
+    #000 50%
+  );
+}
+
+.effet:hover::before {
+  width:100%;
+}
+.darkmode--activated .effet {
+  background-image: linear-gradient(
+    to right,
+    #E5BD9B,
+    #E5BD9B,
+    #E5BD9Bd1 50%,
+    #000 50%
+  );
+}
+
+.darkmode--activated .effet:before {
+  background: #E5BD9B;
+}
 
 .darkmode--activated .title-img {
   color: #E5BD9B;
