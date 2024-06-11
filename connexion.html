@@ -30,25 +30,26 @@
     </header>
 
 
-    <div class="flex-grow-1 d-flex align-items-center justify-content-center som_form">
+    <div class="d-flex align-items-center justify-content-center som_form">
         <form class="rounded">
             <div class="row g-0 text-center">
-                <div class="col-md-5 my-4 ">
-                    <label for="identifiant">Identifiant</label>
-                    <input type="text" class="form-control">
+              <h1 class="title-c">Connexion</h1>
+              <div class="mb-3 row">
+                <div class="input-group has-validation">
+                  <span class="input-group-text darkmode" id="validationTooltipUsernamePrepend">@</span>
+                  <input type="text" class="form-control darkmode" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required="" placeholder="Identifiant">
+                  <div class="invalid-tooltip">
+                    Please choose a unique and valid username.
+                  </div>
                 </div>
-                <div class="col-md-2 my-4 d-flex align-items-center justify-content-center">
-                    <div class="mx-2"></div>
-                </div>
-                <div class="col-md-5 my-4 ">
-                    <label for="motdepasse">Mot de passe</label>
-                    <input type="password" class="form-control">
-                </div>
-            </div>
-            <div class="col-12 my-4 text-center">
-                <button class="btn btn-lg btn-outline-dark" type="button">Connexion</button>
+              </div>
+            <div class="mb-3 row">
+              <div class="col-sm-12">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Mot de passe">
+              </div>
             </div>
         </form>
+    </div>
     </div>
 
     <footer class="mt-auto text-black-50">
@@ -97,6 +98,26 @@
       
       const darkmode = new Darkmode(options);
       darkmode.showWidget();
+
+
+      (() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
       </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>

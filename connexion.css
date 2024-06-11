@@ -7,6 +7,13 @@
     box-shadow: 0 0 10px #0000002c;
 }
 
+.title-c {
+    color:#fff;
+    font-weight: bold;
+    margin: 10px;
+    text-shadow: 0 0 10px #00000018;
+  }
+
 form {
     background-color: #1A4264;
     color: #fff;
@@ -27,4 +34,9 @@ form .btn {
 
 .darkmode--activated .som-form {
     background-image: url(images/login.jpg);
+}
+
+.darkmode--activated .darkmode {
+    background-color: #000;
+    color: #fff;
 }
