@@ -1,0 +1,30 @@
+.som_form {
+    background-image: url(images/login.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    border-radius: 2%;
+    margin: 100px;
+    box-shadow: 0 0 10px #0000002c;
+}
+
+form {
+    background-color: #1A4264;
+    color: #fff;
+    text-align: center;
+    width: clamp(20rem, 30vw, 70rem);
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 2%;
+    margin: 200px; 
+    height: 240px;
+}
+
+form .btn {
+    background-color: #fff;
+    border-color: #000;
+    color: #000;
+}
+
+.darkmode--activated .som-form {
+    background-image: url(images/login.jpg);
+}
