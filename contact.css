@@ -96,3 +96,11 @@ body {
 .darkmode--activated .effet:before {
     background: #f0e6d1;
 }
+
+.darkmode--activated .bold {
+    color: #f0e6d1;
+}
+
+.darkmode--activated .title {
+    color: #f0e6d1;
+}
