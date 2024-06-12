@@ -30,16 +30,18 @@
     </header>
 
 
-    <div class="d-flex align-items-center justify-content-center som_form">
-        <form class="rounded">
+    <div class="parent-container">
+    <img src="images/login.jpg" class="img-login">
+    <div class="d-flex align-items-center justify-content-center som_form centered">
+        <form>
             <div class="text-center">
               <h1 class="title-c">Connexion</h1>
               <div class="mb-3 row">
                 <div class="input-group has-validation">
-                  <span class="input-group-text darkmode" id="validationTooltipUsernamePrepend">@</span>
-                  <input type="text" class="form-control darkmode" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required="" placeholder="Identifiant">
+                  <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                  <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required="" placeholder="Identifiant">
                   <div class="invalid-tooltip">
-                    Please choose a unique and valid username.
+                    Veuillez entrer un identidiant valide.
                   </div>
                 </div>
               </div>
@@ -49,9 +51,10 @@
               </div>
             </div>
             <div class="col-auto">
-              <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+              <button type="submit" class="btn btn-primary mb-3">Confirmer</button>
             </div>
         </form>
+    </div>
     </div>
     </div>
 
