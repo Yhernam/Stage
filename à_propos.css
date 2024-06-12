@@ -24,14 +24,21 @@ strong {
     margin-bottom: 15px; /* Ajoute un espacement entre les éléments de la liste */
 }
 
+.container {
+    margin-bottom: 200px;
+}
+
+.list-group button {
+    font-weight: bold;
+}
+
 /* PROGRESS-BAR */
 .progress-bar {
     width: 0;
     height: 30px;
     background-color: #1A4264;
-
-
 }
+
 .progress-bar.animation {
     width: 100%;
     transition: width 1s;
@@ -54,4 +61,14 @@ ul {
 
 .darkmode--activated .social {
     color: #E5BD9B;
+}
+
+.darkmode--activated .list-group button {
+    background-color: #E5BD9B;
+    border: 0.5px solid #fff;
+    color: #fff;
+}
+
+.darkmode--activated .list-group button:hover {
+    background-color: #d1ad8d;
 }
