@@ -1,14 +1,3 @@
-<?php
-session_start();
-
-if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== true) {
-    header("Location: connexion.php");
-    exit;
-}
-
-echo "Bienvenue, " . $_SESSION['admin_username'] . "! Vous êtes connecté au tableau de bord admin.";
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,7 +18,7 @@ echo "Bienvenue, " . $_SESSION['admin_username'] . "! Vous êtes connecté au ta
     <a href="menu.html">Menu</a>
     <a href="services.html">Services</a>
     <a href="clients.html">Clients</a>
-    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="active">Contact</a>
   </div>
   
   <div class="main">
