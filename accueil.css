@@ -105,11 +105,15 @@ footer .credit-link {
 
 .btn-img {
   text-decoration: none;
-  padding: 16px;
+  padding: 15px 15px;
   border-radius: 20px;
   color:#fff;
   background-color: #1A4264;
   font-weight: bold;
+}
+
+.btn-img:hover {
+  background-color: #163652;
 }
 
 .title-img {
