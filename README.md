@@ -14,4 +14,4 @@ Chacun a demandé à autrui de l'aide pour effectuer des tâches et améliorer q
 ## Qui maintient et contribue au projet ? ##
 - [Yhernam](https://github.com/Yhernam)
 - [Sanitikhan](https://github.com/Sanitikhan)
-- [Aresaritz](https://github.com/Aresaritz)
+
