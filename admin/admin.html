@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== true) {
+    header("Location: connexion.php");
+    exit;
+}
+
+echo "Bienvenue, " . $_SESSION['admin_username'] . "! Vous êtes connecté au tableau de bord admin.";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,6 +25,10 @@
 <body class="d-flex h-100 text-center">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <h1 class="title">Page admin</h1>
+
+
+
+        <a href="../deconnexion.php">Déconnexion</a>
     </div>
 </body>
 

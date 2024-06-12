@@ -33,13 +33,13 @@
     <div class="parent-container">
     <img src="images/login.jpg" class="img-login">
     <div class="d-flex align-items-center justify-content-center som_form centered">
-        <form>
+        <form action="connexion.php" method="POST" novalidate>
             <div class="text-center">
               <h1 class="title-c">Connexion</h1>
               <div class="mb-3 row">
                 <div class="input-group has-validation">
                   <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
-                  <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required="" placeholder="Identifiant">
+                  <input type="text" class="form-control" id="username" name="username" aria-describedby="validationTooltipUsernamePrepend" placeholder="Identifiant" required>
                   <div class="invalid-tooltip">
                     Veuillez entrer un identifiant valide.
                   </div>
@@ -47,11 +47,11 @@
               </div>
             <div class="mb-3 row">
               <div class="col-sm-12">
-                <input type="password" class="form-control" id="inputPassword" placeholder="Mot de passe">
+                <input type="password" class="form-control" id="password" name="password" placeholder="Mot de passe" required>
               </div>
             </div>
             <div class="col-auto">
-              <button type="submit" class="btn btn-lg btn-outline-dark">Envoyer</button>
+              <input type="submit" class="btn btn-lg btn-outline-dark" value="Se connecter">
             </div>
         </form>
     </div>
@@ -84,6 +84,24 @@
       
       
       <script>
+        // JavaScript pour la validation Bootstrap
+        (function () {
+          'use strict'
+
+          var forms = document.querySelectorAll('.needs-validation')
+
+          Array.prototype.slice.call(forms)
+            .forEach(function(form) {
+              form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                  event.preventDefault()
+                  event.stopPropagation()
+                }
+                form.classList.add('was-validated')
+              }, false)
+            })
+        })()
+
         function addDarkmodeWidget() {
           new Darkmode().showWidget();
         }
