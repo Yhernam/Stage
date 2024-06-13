@@ -169,6 +169,10 @@ footer .credit-link {
 .effet:hover::before {
   width:100%;
 }
+.no-hyperlink {
+  text-decoration: none;
+  color: inherit;
+}
 .darkmode--activated .effet {
   background-image: linear-gradient(
     to right,
