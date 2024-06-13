@@ -38,12 +38,19 @@
 
   .card {
     border: 2px solid #000;
+    box-shadow: 0 0 10px #00000067;
+  }
+
+  .card .card-title {
+    font-weight: bold;
+    color: #1A4264;
   }
 
   .icon-card {
     margin-left: 30px;
     margin-top: 15px;
     margin-bottom: 10px;
+    color: #1A4264;
   }
   
   .main {
@@ -54,4 +61,38 @@
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+  }
+
+  .darkmode--activated .sidenav {
+    background-color: #E5BD9B;
+  }
+
+  .darkmode--activated .sidenav a {
+    color: #000;
+  }
+
+  .darkmode--activated .sidenav a:hover {
+    color: #fff;
+  }
+
+  .darkmode--activated .active {
+    background-color: #fff;
+  }
+
+  .darkmode--activated .card {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid#fff;
+  }
+
+  .darkmode--activated .card-footer {
+    background-color: #ffffff;
+  }
+
+  .darkmode--activated .card-title {
+    color: #E5BD9B;
+  }
+
+  .darkmode--activated .icon-card {
+    color: #E5BD9B;
   }
