@@ -138,39 +138,6 @@
   </div>
 </body>
 
-
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const progressBars = [
-            {bar: document.getElementById('progress1'), text: document.getElementById('progressText1')},
-            {bar: document.getElementById('progress2'), text: document.getElementById('progressText2')},
-            {bar: document.getElementById('progress3'), text: document.getElementById('progressText3')},
-            {bar: document.getElementById('progress4'), text: document.getElementById('progressText4')}
-        ];
-
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                const progressBar = progressBars.find(p => p.bar === entry.target);
-                if (entry.isIntersecting) {
-                    progressBar.bar.classList.add('animation');
-                } else {
-                    progressBar.bar.classList.remove('animation');
-                    progressBar.bar.classList.remove('show-text');
-                    progressBar.text.style.display = 'none';
-                }
-            });
-        });
-
-        progressBars.forEach(p => {
-            observer.observe(p.bar);
-            p.bar.addEventListener('transitionend', () => {
-                p.bar.classList.add('show-text');
-                p.text.style.display = 'block';
-            });
-        });
-    });
-</script>
-
 <script>
     function addDarkmodeWidget() {
       new Darkmode().showWidget();
@@ -192,6 +159,6 @@
   </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
     </body>  
   </html>
