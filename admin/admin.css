@@ -79,6 +79,10 @@
     background-color: #fff;
   }
 
+  .darkmode--activated .active:hover {
+    color: #000;
+  }
+
   .darkmode--activated .card {
     background-color: #000;
     color: #fff;
