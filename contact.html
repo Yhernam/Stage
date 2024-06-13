@@ -189,6 +189,23 @@
   saveInCookies: false, // default: true,
   autoMatchOsTheme: true // default: true
 }
+
+  function submitForm() {
+    var formData = new FormData(document.getElementById('contactForm'));
+
+    fetch('submit_contact.php', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+      alert(data);
+      document.getElementById('contactForm').reset();
+    })
+    .catch(error => {
+      console.error('Erreur:', error);
+    });
+  }
 </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
