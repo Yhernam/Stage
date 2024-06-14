@@ -49,7 +49,7 @@
 
 
         <div class="col-md-5 col-sm-12 cadre">
-            <form class>
+            <form id="contactForm" class="container">
                 <h3 class="title-text animate__animated animate__jello">Ecrivez-nous</h3>
                 <div class="form-row row">
                     <div class="form-group col-md-6 mb-3">
@@ -74,7 +74,7 @@
                 <div class="form-row row">
                     <div class="form-group col-md-6 mb-3">
                         <label for="formation">Formation :</label>
-                        <select class="form-select case" aria-label="Default select example">
+                        <select class="form-select case" name="formation" id="formation" aria-label="Default select example">
                             <option selected>...</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -93,19 +93,19 @@
                         <input type="date" name="DRappel" id="DRappel" class="form-control case" required value>
                     </div>
                     <div class="form-group col-md-6 mb-3">
-                        <label for="heureRappel">Heure du Rappel :</label>
+                        <label for="HRappel">Heure du Rappel :</label>
                         <input type="time" name="HRappel" id="HRappel" class="form-control case" required value>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="form-group col-md-8 mb-3">
                         <label for="msg">Message :</label>
-                        <textarea type="text" name="msg" id="msg" class="form-control case" required ></textarea>
+                        <textarea name="msg" id="msg" class="form-control case" required></textarea>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-md-4 text-center bouton_send">
-                        <button type="button" class="btn btn-lg btn-outline-dark">Envoyer</button>
+                        <button type="submit" class="btn btn-lg btn-outline-dark" onclick="submitForm()">Envoyer</button>
                     </div>
                 </div>
             </form>
@@ -193,7 +193,7 @@
   function submitForm() {
     var formData = new FormData(document.getElementById('contactForm'));
 
-    fetch('submit_contact.php', {
+    fetch('contact.php', {
       method: 'POST',
       body: formData
     })
