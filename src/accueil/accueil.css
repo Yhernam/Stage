@@ -259,11 +259,29 @@ nav li:first-child {
 }
 
 /* PARTENAIRES */
+.partenaires {
+  margin: 200px;
+}
+
+.partenaires h1 {
+  margin: 50px;
+  font-weight: 800;
+  text-shadow: 0 0 15px #000000d3;
+}
+
+.partenaires span {
+  background: linear-gradient(to right, #E5BF9E, #E5D4BC);
+  text-shadow: 0 0 15px #E5BF9E;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 .partenaires .card {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  margin: 50px;
+  padding: 1px;
+  margin: 10px;
   border-radius: 5%;
   box-shadow: 0 0 15px #E5BF9E;
 }
