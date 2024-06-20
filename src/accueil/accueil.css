@@ -130,8 +130,7 @@ nav li:first-child {
 
 .presentation a:hover {
   background-color: #E5D4BC;
-  padding: 20px 55px;
-  transition: 0.15s;
+  transform: scale(1.05);
 }
 
 .presentation .img {
@@ -209,10 +208,7 @@ nav li:first-child {
 }
 
 .service-box a:hover {
-  transition: 0.15s;
-  width: 55px;
-  height: 55px;
-  right: 10px;
+  transform: scale(1.05);
   background-color: #2a2a2a;
 }
 
@@ -259,8 +255,38 @@ nav li:first-child {
 
 .contact a:hover {
   background-color: #E5D4BC;
-  padding: 20px 55px;
-  transition: 0.15s;
+  transform: scale(1.05);
+}
+
+/* PARTENAIRES */
+.partenaires .card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 50px;
+  border-radius: 5%;
+  box-shadow: 0 0 15px #E5BF9E;
+}
+
+.partenaires .card:hover {
+  transform: scale(1.05);
+}
+
+.partenaires img {
+  border-radius: 5%;
+  width: 100%;
+}
+
+/* CERTIFICATIONS */
+.certifications {
+  display: flex;
+}
+
+.certifications img {
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 /* FOOTER */
@@ -323,8 +349,7 @@ nav li:first-child {
 }
 
 .footer-contact .footer-button:hover {
-  padding: 12px 22px;
-  transition: 0.15s;
+  transform: scale(1.05);
 }
 
 .footer-contact .whatsapp {
