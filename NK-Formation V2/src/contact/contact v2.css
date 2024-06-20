@@ -1,0 +1,238 @@
+body{
+    background-color: purple;
+}
+.title{
+    text-align: center;
+}
+.formulaire{
+    border: 2px solid black;
+    border-radius: 5%;
+    padding: 2em;
+}
+.title_form{
+    text-align: center;
+}
+.button_send{
+    text-align: center;
+}
+
+
+ul
+{
+list-style-type: none;
+}
+svg{
+    color: black;
+}
+a{
+    text-decoration: none;
+  }
+.boite1{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+.case_form{
+    display: flex;
+    justify-content: center;
+}
+  /* HOVER liens hypertextes */
+.effet {
+    color: #1A4264;
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;/* pour les anciennes verions de certains navigateurs*/
+    background-clip:text;
+    -moz-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+  }
+  .effet:before {
+    content: '';
+    background:#1A4264;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  .effet:hover {
+   background-position: 0;
+   background-image: linear-gradient(
+      to right,
+      #1A4264,
+      #1A4264,
+      #1A4264 50%,
+      #000 50%
+    );
+  }
+  .effet:hover::before {
+    width:100%;
+  }
+
+/* couleur texte + titre */
+p, h1, h3,h5{
+    color: rgb(237, 227, 204);
+  }
+/* formulaire */
+.formulaire {
+    width: 20em; /*POUR CHANGER LA TAILLE DU FORMULAIRE*/
+    border: 2px solid  rgb(196, 159, 86); /* Border color and width */
+    padding: 10px; /* Padding inside the border */
+    border-radius: 5%;
+    background-color:  rgb(196, 159, 86);
+    box-shadow: 0 0 50px 9px #e5b882;
+  }
+    /* case input */
+.case{
+    border-radius: 20px; /* Even more rounded corners */
+    padding: 5px; /*changer taille input*/
+    border: 3px solid rgb(237, 227, 204);
+    font-size: 15px; /* Default font size */
+  }
+  .case:focus {
+    outline: none; /* Remove default outline */
+    border-color: rgb(196, 159, 86); /* Change border color on focus */
+    background-color: rgb(237, 227, 204); /* Change background color on focus */
+    box-shadow: 0 0 5px rgb(196, 159, 86);; /* Add a blue glow on focus */
+  }
+
+/* cadre des infos sur nk formation */
+.info_data{
+    position: relative;
+    border: 2px solid  rgb(196, 159, 86); /* Border color and width */
+    padding: 2em; /* Padding inside the border */
+    margin: auto;
+    border-radius: 5%;
+    background-color:  rgb(196, 159, 86);
+    box-shadow: 10px 10px rgb(237, 227, 204);
+
+}
+
+/* alignement des icon et du <p> qui suit */
+.alignement {
+    display: flex;
+    align-items: center;
+}
+
+.alignement svg {
+    margin-right: 10px; /* Ajustez cette valeur selon vos besoins */
+    vertical-align: middle;
+}
+
+.alignement p {
+    margin: 0;
+    vertical-align: middle;
+}
+
+/* css pour que l'iframe ne sorte pas du cadre */
+iframe{
+    border-radius: 5%;
+}
+.localisation{
+    width: 100%; /* Largeur parente */
+    height: 300px; /* Hauteur spécifique pour l'iframe */
+    position: relative;
+    border-radius: 5%;
+    background-color:  rgb(196, 159, 86);
+    box-shadow: 10px 10px rgb(237, 227, 204);
+}
+.localisation iframe {
+    position: absolute; /* Positionnement absolu pour remplir l'élément parent */
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Progress Bar  */
+.progress-bar {
+    width: 0;
+    height: 20px; /* Augmentez cette valeur pour augmenter l'épaisseur */
+    background-color: rgb(237, 227, 204);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(196, 159, 86);
+    margin: 10px 20px; /* Marges en haut, en bas, à gauche et à droite */
+}
+
+.progress-bar.animation {
+    width: 100%;
+    transition: width 1s;
+}
+
+.progress-text {
+    position: absolute;
+    display: none;
+}
+
+.progress-bar.show-text .progress-text {
+    display: block;
+}
+
+/* card retiré car trop mauche et trop de formes rectangulaires */
+
+.a_pp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap; /* à retirer si le texte fait la même taille des deux côtés*/
+    
+}
+.card__image {
+    margin-bottom: -.75rem;
+  }
+.card__img {
+    width: 19em;
+
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+}
+
+.card{
+    border: 2px solid black;
+    border-radius: 1.25rem;
+    overflow: hidden;
+  }
+.card__data{
+    background-color: hsl(212, 42%, 20%);
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    flex-wrap: wrap;
+}
+.card__description {
+    font-weight: 500;
+    margin-bottom: 1.75rem;
+  }
+
+  /* retirer car format card choisi  */
+/* .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+}
+.image_1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+.image-ronde{
+    width : 150px; height : 150px;
+    border: none;
+    -moz-border-radius : 75px;
+    -webkit-border-radius : 75px;
+    border-radius : 75px;
+  } */
