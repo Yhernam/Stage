@@ -110,6 +110,7 @@ nav li:first-child {
   color: #000;
   display: flex;
   margin-top: 180px;
+  margin-bottom: 30px;
   font-size: 3.5rem;
   font-weight: 800;
   text-shadow: 0 0 15px #000000d3;
@@ -229,6 +230,10 @@ nav li:first-child {
 }
 
 /* CONTACT */
+.contact {
+  margin: 50px;
+}
+
 .contact .title {
   margin: 50px;
   font-weight: 800;
@@ -238,7 +243,24 @@ nav li:first-child {
 .contact .text {
   font-size: 1rem;
   text-align: justify;
-  margin: 50px;
+}
+
+.contact a {
+  text-decoration: none;
+  padding: 18px 50px;
+  border-radius: 30px;
+  background: #E5BF9E;
+  display: inline-block;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 20px;
+  box-shadow: 0 0 15px #E5BF9E;
+}
+
+.contact a:hover {
+  background-color: #E5D4BC;
+  padding: 20px 55px;
+  transition: 0.15s;
 }
 
 /* FOOTER */
@@ -255,6 +277,7 @@ nav li:first-child {
   width: 100%;
   height: 100px;
   padding: 10px 20px;
+  margin: 70px;
   margin-left: auto;
   margin-right: auto;
   bottom: 1px;
