@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,10 +9,9 @@
 /* NAVBAR */
 nav {
   background-color: #e2e2e2;
-  box-sizing: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px #E5BF9E;
   background-image: linear-gradient(243deg,#E5BF9E 0, #E5D4BC 100%);
   font-size: larger;
-  box-shadow: 0 0 10px #E5BF9E;
 }
 
 nav .logo {
@@ -227,7 +228,10 @@ nav li:first-child {
 
 /* PARTENAIRES */
 .partenaires {
-  margin: 200px;
+  margin: 1em;/*
+  width: 5em;
+  display: flex;
+  flex-direction: row;*/
 }
 
 .partenaires h1 {
@@ -243,6 +247,7 @@ nav li:first-child {
   color: transparent;
 }
 
+/*
 .partenaires .card {
   display: flex;
   flex-direction: column;
@@ -251,7 +256,7 @@ nav li:first-child {
   margin: 10px;
   border-radius: 5%;
   box-shadow: 0 0 15px #E5BF9E;
-}
+}*/
 
 .partenaires .card:hover {
   transform: scale(1.05);
@@ -264,14 +269,12 @@ nav li:first-child {
 
 /* CERTIFICATIONS */
 .certifications {
-  display: flex;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .certifications img {
-  width: 5%;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  width: 100%;
 }
 
 /* CONTACT */
@@ -363,10 +366,11 @@ nav li:first-child {
   color: #E5BF9E;
   cursor: pointer;
   transition:.5s;
-  &:hover{
-    color: #E5D4BC  ;
-    transform: rotate(22deg)
-  }
+}
+
+.actions a .cl:hover {
+  color: #E5D4BC;
+  transform: rotate(22deg);
 }
 
 /* FOOTER */
@@ -518,8 +522,14 @@ nav li:first-child {
     display: block;
   }
 }
+
 @media(max-width: 400px){
-  .title {
+  .nav .logo,
+  .nav .name {
+  font-size: 0.8rem;
+  }
+
+  .presentation .title {
     font-size: 0.1rem;
   }
   .sidebar{
