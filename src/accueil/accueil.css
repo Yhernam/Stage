@@ -228,10 +228,7 @@ nav li:first-child {
 
 /* PARTENAIRES */
 .partenaires {
-  margin: 1em;/*
-  width: 5em;
-  display: flex;
-  flex-direction: row;*/
+  margin: 1em;
 }
 
 .partenaires h1 {
@@ -246,17 +243,6 @@ nav li:first-child {
   -webkit-background-clip: text;
   color: transparent;
 }
-
-/*
-.partenaires .card {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  padding: 1px;
-  margin: 10px;
-  border-radius: 5%;
-  box-shadow: 0 0 15px #E5BF9E;
-}*/
 
 .partenaires .card:hover {
   transform: scale(1.05);
@@ -278,6 +264,10 @@ nav li:first-child {
 }
 
 /* CONTACT */
+.contact {
+  margin-bottom: 100px;
+}
+
 .contact .title {
   color: #000;
   display: flex;
@@ -347,10 +337,6 @@ nav li:first-child {
   padding: 2.5em 1.5em 1.5em 1.5em;
 }
 
-.contact .img-portada {
-  width: 100%;
-}
-
 .contact .portada {
   width: 100%;
   height: 100%;
@@ -382,11 +368,11 @@ nav li:first-child {
   box-shadow: 0 0 10px #E5BF9E;
   border-radius: 20px;
   position: fixed;
-  width: 100%;
+  width: 90%;
   height: 100px;
   padding: 10px 20px;
-  margin-left: auto;
-  margin-right: auto;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 1px;
   z-index: 99;
 }
@@ -449,6 +435,10 @@ nav li:first-child {
 .footer-contact .instagram {
   background: linear-gradient(to right, #f58529, #dd2a7b, #8134af, #515bd4);
   box-shadow: 0 0 10px #515bd4;
+}
+
+.footer-infos {
+  margin-bottom: 150px;
 }
 
 /* MODAL */
@@ -525,13 +515,73 @@ nav li:first-child {
   }
 
   .presentation .title {
-    font-size: 0.1rem;
+    font-size: 2rem;
   }
+  
+  .presentation img {
+    display: none;
+  }
+
   .sidebar{
     width: 100%;
   }
   .logo{
     width: 100%;
+  }
+
+  .contact .title {
+    font-size: 2.8rem;
+  }
+
+  .contact .card {
+    max-width: 300px;
+    height: 300px;
+  }
+
+  .contact .card .little-title {
+    padding: 0.5rem;
+    padding-right: 2rem;
+  }
+
+  .contact .card .desc {
+    font-size: 10px;
+  }
+
+  .contact .card .actions svg {
+    width: 30px;
+  }
+
+  .contact .card .portada {
+    height: 300px;
+  }
+
+  .contact .img-avatar {
+    left: 60px;
+  }
+
+  .footer-contact {
+   display: block;
+   height: 90px;
+  }
+
+  .footer-contact p {
+    font-size: 0.8em;
+  }
+
+  .footer-contact .footer-img {
+    width: 20px;
+  }
+
+  .footer-contact .footer-right {
+    justify-content: none;
+  }
+
+  .footer-contact .footer-button {
+    padding: 5px 10px;
+  }
+
+  .footer-contact svg {
+    width: 70%;
   }
 }
 
