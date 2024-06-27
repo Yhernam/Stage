@@ -8,24 +8,27 @@
 
 /* NAVBAR */
 nav {
-  background-color: #e2e2e2;
-  box-shadow: 0 0 10px #E5BF9E;
-  background-image: linear-gradient(243deg,#E5BF9E 0, #E5D4BC 100%);
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background-image: linear-gradient(243deg,#0017A1 0, #011378 100%);
+  box-shadow: 0 0 10px #0017A1;
   font-size: larger;
 }
 
 nav .logo {
-  width: 8%;
+  width: 15%;
   margin-right: 15px;
 }
 
 nav .name {
-  color: #fff;
+  color: #C49644;
   font-weight: bold;
+  text-shadow: 0 0 10px #C49644;
 }
 
 nav ul {
-  padding: 8px;
+  padding: 10px;
   width: 100%;
   list-style: none;
   display: flex;
@@ -34,12 +37,13 @@ nav ul {
 }
 
 nav li {
-  height: 50px;
+  margin-top: 70px;
+  margin-bottom: 60px;
 }
 
 nav a {
   height: 100%;
-  padding: 0 15px;
+  padding: 0 1px;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   text-decoration: none;
@@ -51,6 +55,7 @@ nav a {
 }
 
 nav .active {
+  border-bottom-width: 0.3rem;
   border-bottom-color: #fff;
 }
 
@@ -69,7 +74,7 @@ nav li:first-child {
   right: 0;
   height: 100vh;
   width: 250px;
-  background-image: linear-gradient(243deg,#E5BF9E 0, #E5D4BC 100%);
+  background-image: linear-gradient(243deg,#0017A1 0, #011378 100%);
   backdrop-filter: blur(12px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   list-style: none;
@@ -121,16 +126,16 @@ nav li:first-child {
   text-decoration: none;
   padding: 18px 50px;
   border-radius: 30px;
-  background: #E5BF9E;
+  background: #0017A1;
   display: inline-block;
   color: #fff;
   font-weight: 700;
   margin-top: 20px;
-  box-shadow: 0 0 15px #E5BF9E;
+  box-shadow: 0 0 15px #0017A1;
 }
 
 .presentation a:hover {
-  background-color: #E5D4BC;
+  background-color: #011378;
   transform: scale(1.05);
 }
 
@@ -171,8 +176,8 @@ nav li:first-child {
   border-radius: 2%;
   padding: 15px;
   position: relative;
-  background: linear-gradient(to right, #E5BF9E, #E5D4BC);
-  box-shadow: 0 0 10px #E5BF9E;
+  background: linear-gradient(to right, #0017A1, #011378);
+  box-shadow: 0 0 10px #0017A1;
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
@@ -184,14 +189,16 @@ nav li:first-child {
   margin-top: 10px;
   margin-bottom: 20px;
   margin-left: 10px;
+  color: #fff;
 }
 
 .services p {
   text-align: justify;
+  color: #fff;
 }
 
 .service-box h3 {
-  color: #000;
+  color: #fff;
   font-weight: 700;
 }
 
@@ -199,29 +206,30 @@ nav li:first-child {
   width: 45px;
   height: 45px;
   border-radius: 50%;
+  border: 1px solid #000;
   display: block;
   text-align: center;
   position: absolute;
   bottom: -20px;
   right: 20px;
-  background: #000;
-  box-shadow: 0 0 10px #000;
+  background: #fff;
+  box-shadow: 0 0 10px #fff;
 }
 
 .service-box a:hover {
   transform: scale(1.05);
-  background-color: #2a2a2a;
+  background-color: #e7e7e7;
 }
 
 .service-box a .bi {
-  color: #fff;
+  color: #000;
   font-size: 25px !important;
   padding-top: 6px;
 }
 
 .services span {
-  background: linear-gradient(to right, #E5BF9E, #E5D4BC);
-  text-shadow: 0 0 15px #E5BF9E;
+  background: linear-gradient(to right, #0017A1, #011378);
+  text-shadow: 0 0 15px #0017A1;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -238,8 +246,8 @@ nav li:first-child {
 }
 
 .partenaires span {
-  background: linear-gradient(to right, #E5BF9E, #E5D4BC);
-  text-shadow: 0 0 15px #E5BF9E;
+  background: linear-gradient(to right, #0017A1, #011378);
+  text-shadow: 0 0 15px #0017A1;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -281,7 +289,7 @@ nav li:first-child {
 .contact .card {
   background: #fff;
   border-radius: 2%;
-  box-shadow: 0 0 15px #E5BF9E;
+  box-shadow: 0 0 15px #0017A1;
   max-width: 500px;
   display: flex;
   flex-direction: row;
@@ -295,8 +303,8 @@ nav li:first-child {
 .contact .card .little-title {
   padding: 1rem;
   text-align: right;
-  color: #E5BF9E;
-  text-shadow: 0 0 15px #E5BF9E;
+  color: #0017A1;
+  text-shadow: 0 0 15px #0017A1;
   font-weight: bold;
   font-size: 12px;
 }
@@ -323,7 +331,7 @@ nav li:first-child {
   position: absolute;
   border-radius: 50%;
   border: 6px solid white;
-  background: linear-gradient(to right, #E5BF9E, #E5D4BC);
+  background: linear-gradient(to right, #0017A1, #011378);
   top: 15px;
   left: 120px;
 }
@@ -342,20 +350,20 @@ nav li:first-child {
   height: 100%;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  background: linear-gradient(to right, #E5BF9E, #E5D4BC);
+  background: linear-gradient(to right, #0017A1, #011378);
   background-position: bottom center;
   background-size: cover;
 }
 
 .actions a .cl {
   font-size: 24px;
-  color: #E5BF9E;
+  color: #0017A1;
   cursor: pointer;
   transition:.5s;
 }
 
 .actions a .cl:hover {
-  color: #E5D4BC;
+  color: #011378;
   transform: rotate(22deg);
 }
 
@@ -364,8 +372,8 @@ nav li:first-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to right, #E5BF9E, #E5D4BC);
-  box-shadow: 0 0 10px #E5BF9E;
+  background: linear-gradient(to right, #0017A1, #011378);
+  box-shadow: 0 0 10px #0017A1;
   border-radius: 20px;
   position: fixed;
   width: 90%;
@@ -385,12 +393,8 @@ nav li:first-child {
   font-size: 1.5em;
   font-weight: bold;
   margin-left: 10px;
-}
-
-.footer-contact .footer-img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  color: #C49644;
+  text-shadow: 0 0 10px #C49644;
 }
 
 .footer-contact .footer-right {
@@ -449,7 +453,7 @@ nav li:first-child {
 }
 
 .modal .modal-header {
-  background: linear-gradient(to right, #E5BF9E, #E5D4BC);
+  background: linear-gradient(to right, #0017A1, #011378);
 }
 
 .modal .modal-title {
@@ -459,7 +463,7 @@ nav li:first-child {
 }
 
 .modal .modal-content {
-  box-shadow: 0 0 10px #E5BF9E;
+  box-shadow: 0 0 10px #0017A1;
 }
 
 .modal .input-group {
@@ -467,17 +471,19 @@ nav li:first-child {
 }
 
 .modal input {
-  box-shadow: 0 0 10px #E5BF9E;
+  box-shadow: 0 0 10px #0017A1;
 }
 
 .modal .btn-connexion {
-  background-color: #E5BF9E;
-  box-shadow: 0 0 10px #E5BF9E;
+  background-color: #0017A1;
+  box-shadow: 0 0 10px #0017A1;
   font-weight: 600;
+  color: #fff;
 }
 
 .modal .btn-connexion:hover {
-  background-color: #E5D4BC;
+  background-color: #011378;
+  color: #fff;
 }
 
 /* SCROLL BAR */
@@ -490,12 +496,12 @@ nav li:first-child {
 }
  
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #E5BF9E, #E5D4BC);
+  background: linear-gradient(to bottom, #0017A1, #011378);
   
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #d0ad8f, #E5BF9E);
+  background: linear-gradient(to bottom, #011378, #0017A1);
 }
 
 /* MEDIA QUERIES */
@@ -568,10 +574,6 @@ nav li:first-child {
     font-size: 0.8em;
   }
 
-  .footer-contact .footer-img {
-    width: 20px;
-  }
-
   .footer-contact .footer-right {
     justify-content: none;
   }
@@ -584,34 +586,3 @@ nav li:first-child {
     width: 70%;
   }
 }
-
-/* 
-.logo {
-  width: 7%;
-  margin-right: 15px;
-}
-
-.cover-container {
-  max-width: 95em;
-}
-
-
-
-.title {
-  color:#1A4264;
-  font-weight: bold;
-  margin: 10px;
-  text-shadow: 0 0 10px #00000018;
-}
-
-.img {
-  width: 50%;
-  border-radius: 20px;
-  box-shadow: 0 0 10px #00000067;
-}
-
-.bold {
-  font-weight: bold;
-  color: #1A4264;
-}*/
-
