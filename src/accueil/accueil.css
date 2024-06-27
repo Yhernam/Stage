@@ -381,13 +381,10 @@ nav li:first-child {
   background: linear-gradient(to right, #E5BF9E, #E5D4BC);
   box-shadow: 0 0 10px #E5BF9E;
   border-radius: 20px;
-  /*
   position: fixed;
-  */
   width: 100%;
   height: 100px;
   padding: 10px 20px;
-  margin: 70px;
   margin-left: auto;
   margin-right: auto;
   bottom: 1px;
@@ -396,7 +393,6 @@ nav li:first-child {
 
 .footer-contact .footer-left {
   display: flex;
-  align-items: center;
 }
 
 .footer-contact p {
@@ -413,7 +409,6 @@ nav li:first-child {
 
 .footer-contact .footer-right {
   display: flex;
-  align-items: center;
   gap: 10px;
   justify-content: flex-end;
 }
