@@ -1,5 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -8,20 +9,188 @@
   --first-color: hsl(38, 92%, 58%);
   --first-color-light: hsl(38, 100%, 78%);
   --first-color-alt: hsl(32, 75%, 50%);
-  --second-color: hsl(195, 75%, 52%);
+  --second-color: black;
   --dark-color: hsl(212, 40%, 12%);
   --white-color: hsl(212, 4%, 95%);
-  --body-color: hsl(212, 42%, 15%);
-  --container-color: hsl(212, 42%, 20%);
+  --body-color: white;
+  --container-color: #E5BF9E;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Bai Jamjuree", sans-serif;
+  font-family: 'Poppins', sans-serif;
   --h2-font-size: 1.25rem;
   --normal-font-size: 1rem;
 }
+/*=============== NAVBAR ===============*/
+nav {
+  background-color: #e2e2e2;
+  box-shadow: 0 0 10px #E5BF9E;
+  background-image: linear-gradient(243deg,#E5BF9E 0, #E5D4BC 100%);
+  font-size: larger;
+}
 
+nav .logo {
+  width: 8%;
+  margin-right: 15px;
+}
+
+nav .name {
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  padding: 8px;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  height: 50px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 15px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  border-bottom: .20rem solid transparent;
+}
+
+nav .active {
+  border-bottom-color: #fff;
+}
+
+nav a:hover {
+  color: #eaeaea;
+  border-bottom-color: #fff;
+}
+
+nav li:first-child {
+  margin-right: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-image: linear-gradient(243deg,#E5BF9E 0, #E5D4BC 100%);
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 99;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+}
+
+.menu-button {
+  display: none;
+}
+/* FOOTER */
+.footer-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #E5BF9E, #E5D4BC);
+  box-shadow: 0 0 10px #E5BF9E;
+  border-radius: 20px;
+  position: fixed;
+  width: 90%;
+  height: 100px;
+  padding: 10px 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1px;
+  z-index: 99;
+}
+
+.footer-contact .footer-left {
+  display: flex;
+}
+
+.footer-contact p {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.footer-contact .footer-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.footer-contact .footer-right {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.footer-contact .footer-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-contact .footer-button:hover {
+  transform: scale(1.05);
+}
+
+.footer-contact .whatsapp {
+  background-color: #25D366;
+  box-shadow: 0 0 10px #25D366;
+}
+
+.footer-contact .facebook {
+  background-color: #0866FF;
+  box-shadow: 0 0 10px #0866FF;
+}
+
+.footer-contact .linkedin {
+  background-color: #0A66C2;
+  box-shadow: 0 0 10px #0A66C2;
+}
+
+.footer-contact .instagram {
+  background: linear-gradient(to right, #f58529, #dd2a7b, #8134af, #515bd4);
+  box-shadow: 0 0 10px #515bd4;
+}
+
+.footer-infos {
+  margin-bottom: 150px;
+}
 /*=============== BASE ===============*/
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -32,7 +201,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
-  color: var(--white-color);
+  
 }
 
 a {
@@ -45,8 +214,11 @@ img {
   height: auto;
 }
 h1{
+  color: #000;
   text-align: center;
-  margin-bottom: 3em;
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-shadow: 0 0 15px #000000d3;
 }
 .icon-text-list {
   list-style: none;
@@ -71,7 +243,7 @@ h1{
   text-align: start;
 }
 /*=============== CARD ===============*/
-.container {
+.container-fluid {
  display: flex;
  justify-content: space-around;
  flex-wrap: wrap;
@@ -115,6 +287,7 @@ h1{
 
 .card__data {
   background-color: var(--container-color);
+  box-shadow: 0 0 15px #E5BF9E;
   padding: 1.5rem 2rem;
   border-radius: 1rem;
   text-align: center;
@@ -133,45 +306,123 @@ h1{
 
 .card__name {
   font-size: var(--h2-font-size);
-  color: var(--second-color);
   margin-bottom: .75rem;
+  color: #000;
+  font-weight: 700;
 }
 
 .card__description {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: baseline;
   font-weight: 500;
   margin-bottom: 1.75rem;
 }
 
 .card__button {
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: var(--dark-color);
   padding: .75rem 1.5rem;
   border-radius: .25rem;
-  color: var(--dark-color);
+  color: white;
   font-weight: 600;
 }
 
+/* Modal connexion */
+.modal .btn-close {
+  background-color: #ffffffbd;
+  border: #000 1px solid;
+  box-shadow: 0 0 10px #fff;
+}
+
+.modal .modal-header {
+  background: linear-gradient(to right, #E5BF9E, #E5D4BC);
+}
+
+.modal .modal-title {
+  color: #fff;
+  text-shadow: 0 0 10px #fff;
+  font-weight: 800;
+}
+
+.modal .modal-content {
+  box-shadow: 0 0 10px #E5BF9E;
+  border-radius: 5%;
+  color: #000;
+}
+
+.modal .input-group {
+  margin-bottom: 15px;
+}
+
+.modal input {
+  box-shadow: 0 0 10px #E5BF9E;
+}
+
+.modal .btn-connexion {
+  background-color: #E5BF9E;
+  box-shadow: 0 0 10px #E5BF9E;
+  font-weight: 600;
+}
+
+.modal .btn-connexion:hover {
+  background-color: #E5D4BC;
+}
+
+/*=======Modal info======*/
+/* Styles généraux */
 
 
+#info-btn {
+  cursor: pointer;
+  vertical-align: middle;
+}
 
+/* Cacher le texte d'information et afficher le bouton de remplacement pour les petits écrans */
+@media (max-width: 768px) {
+  .info {
+    display: none; /* Cacher le texte d'information */
+  }
+}
 
+/* Styles pour la modale */
+.info-modal {
+  position: absolute; /* Positionner la modale au centre de la fenêtre */
+  z-index: 1000; /* Assurer que la modale soit au-dessus de tous les autres éléments */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 50%;
+  max-width: 500px;
+  background-color: grey;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 8px;
+}
 
+.modal-header {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #E5BF9E, #E5D4BC);
+  justify-content: center;
+}
 
+.modal-content {
+  margin-bottom: 20px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
 
 
 
@@ -243,5 +494,92 @@ h1{
   }
   .swiper-button-next {
     right: -1rem;
+  }
+}
+
+/*=================NAV-BAR MEDIA============*/
+@media(max-width: 800px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+}
+
+@media(max-width: 400px){
+  .nav .logo,
+  .nav .name {
+  font-size: 0.8rem;
+  }
+
+  .presentation .title {
+    font-size: 2rem;
+  }
+  
+  .presentation img {
+    display: none;
+  }
+
+  .sidebar{
+    width: 100%;
+  }
+  .logo{
+    width: 100%;
+  }
+
+  .contact .title {
+    font-size: 2.8rem;
+  }
+
+  .contact .card {
+    max-width: 300px;
+    height: 300px;
+  }
+
+  .contact .card .little-title {
+    padding: 0.5rem;
+    padding-right: 2rem;
+  }
+
+  .contact .card .desc {
+    font-size: 10px;
+  }
+
+  .contact .card .actions svg {
+    width: 30px;
+  }
+
+  .contact .card .portada {
+    height: 300px;
+  }
+
+  .contact .img-avatar {
+    left: 60px;
+  }
+
+  .footer-contact {
+   display: block;
+   height: 90px;
+  }
+
+  .footer-contact p {
+    font-size: 0.8em;
+  }
+
+  .footer-contact .footer-img {
+    width: 20px;
+  }
+
+  .footer-contact .footer-right {
+    justify-content: none;
+  }
+
+  .footer-contact .footer-button {
+    padding: 5px 10px;
+  }
+
+  .footer-contact svg {
+    width: 70%;
   }
 }
