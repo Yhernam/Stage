@@ -15,10 +15,10 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/></svg></a>
             </li>
             <li>
-                <a href="accueil/index.html">Accueil</a>
+                <a href="../index.html">Accueil</a>
             </li>
            <li>
-                <a href="src/formation/index.html">Formations</a>
+                <a href="../formation/index.html">Formations</a>
             </li>
            <li>
                 <a class="active" aria-current="page" href="../../../contact v2.html">Nous contacter</a>
@@ -28,9 +28,9 @@
             </li>
         </ul>
         <ul>
-           <li class="name"><img src="../../../assets/images/logo.png" class="logo">NK Formation</li>
-           <li class="hideOnMobile"><a href="accueil/index.html">Accueil</a></li>
-           <li class="hideOnMobile"><a href="src/formation/index.html">Formations</a></li>
+           <li class="name"><img src="../../assets/images/logo.png" class="logo">NK Formation</li>
+           <li class="hideOnMobile"><a href="../index.html">Accueil</a></li>
+           <li class="hideOnMobile"><a href="../formation/index.html">Formations</a></li>
            <li class="hideOnMobile"><a class="active" aria-current="page" href="#">Nous contacter</a></li>
            <li class="hideOnMobile" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><a href="#">Connexion</a></li>
            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-filter-right" viewBox="0 0 16 16">
@@ -194,6 +194,31 @@
                </div> 
            </div>
     </div>
+    <!-- modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Connexion</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="position-relative">
+                <label for="validationTooltipUsername" class="form-label">Identifiant</label>
+                <div class="input-group has-validation">
+                  <input type="text" class="form-control d-inline-flex focus-ring focus-ring-secondary py-1 px-2 text-decoration-none border rounded-2" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                </div>
+              </div>
+              <label for="inputPassword5" class="form-label">Mot de passe</label>
+              <input type="password" id="inputPassword5" class="form-control d-inline-flex focus-ring focus-ring-secondary py-1 px-2 text-decoration-none border rounded-2" aria-describedby="passwordHelpBlock">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Annuler</button>
+              <button type="submit" class="btn btn-connexion">Connexion</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <footer>
         <div class="footer-contact">
             <div class="footer-left">
