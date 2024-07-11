@@ -126,6 +126,7 @@ nav li:first-child {
   transform: translateX(-50%);
   bottom: 1px;
   z-index: 99;
+  color: #fff;
 }
 
 .footer-contact .footer-left {
@@ -337,6 +338,7 @@ h1{
   background-color: #ffffffbd;
   border: #000 1px solid;
   box-shadow: 0 0 10px #fff;
+  justify-content: end;
 }
 
 .modal .modal-header {
@@ -400,15 +402,15 @@ h1{
   height: 40%;
   max-width: 500px;
   background: linear-gradient(to right, #0017A1, #011378);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px #0017A1;
   padding: 20px;
   border-radius: 8px;
 }
 
 .info-modal .btn-close {
-  background-color: #ffffffbd;
+  /*background-color: #ffffffbd;
   border: #000 1px solid;
-  box-shadow: 0 0 10px #fff;
+  box-shadow: 0 0 10px #fff;*/
 }
 .info-modal .modal-title {
   color: #fff;
@@ -417,7 +419,6 @@ h1{
 }
 
 .info-modal .modal-content {
-  box-shadow: 0 0 10px #0017A1;
   color: #fff;
 }
 
