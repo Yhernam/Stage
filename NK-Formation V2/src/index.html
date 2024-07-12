@@ -1,502 +1,423 @@
 <!DOCTYPE html>
    <html lang="en">
+
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
-
-      <!--=============== SWIPER CSS ===============-->
-      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
-      <!--=============== CSS ===============-->
+  <title>NK Formation France</title>
+  <link rel="stylesheet" href="accueil.css">
+  <link rel="icon" href="../../images/logo.png" type="image/png">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-      <link rel="stylesheet" href="assets/css/styles.css">
-      
+</head>
 
-      <title>NK-Formation</title>
-   </head>
    <body>
       <nav>
          <ul class="sidebar">
             <li onclick="hideSidebar()"><a href="#">
                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/></svg></a></li>
-            <li><a href="../index.html">Accueil</a></li>
-            <li><a class="active" aria-current="page" href="index.html">Formations</a></li>
-            <li><a href="../contact/contact v2.html">Nous contacter</a></li>
+          <li><a class="active" aria-current="page" href="index.html">Accueil</a></li>
+          <li><a href="formation/index.html">Formations</a></li>
+          <li><a href="../contact/contact.html">Nous contacter</a></li>
             <li data-bs-toggle="modal" data-bs-target="#staticBackdrop"><a href="#">Connexion</a></li>
          </ul>
          <ul>
-            <li class="name"><img src="../../assets/images/logo.png" class="logo">NK Formation</h3>
-            <li class="hideOnMobile"><a href="../index.html">Accueil</a></li>
-            <li class="hideOnMobile"><a class="active" aria-current="page" href=index.html>Formations</a></li>
-            <li class="hideOnMobile"><a href="../contact/contact v2.html">Nous contacter</a></li>
+          <li class="name"><img src="../../images/logo.png" class="logo">NK Formation</li>
+          <li class="hideOnMobile"><a class="active" aria-current="page" href="index.html">Accueil</a></li>
+          <li class="hideOnMobile"><a href="formation/index.html">Formations</a></li>
+          <li class="hideOnMobile"><a href="#">Nous contacter</a></li>
             <li class="hideOnMobile" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><a href="#">Connexion</a></li>
             <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-filter-right" viewBox="0 0 16 16">
                <path d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5m0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5m0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5"/>
-            </svg></a>
-            </li>
+          </svg></a></li>
          </ul>
       </nav>
-      <div class="container-fluid">
-         <div class="info-section">
-            <div class="row justify-content-center">
-               <!-- Partie présentation -->
-               <div class="col-md-6 info_data" >
+
+  <div class="container">
+    <section class="presentation">
                   <div class="row">
-                     <div class="col-md-12 " >
-                        <h1><strong>Vente de formations E-Learning</strong></h1>
-                        <p>Vente et création de votre formation. Propriétaires de votre contenu. 0 frais à chaque inscription. + 200 formations dont +20 conformes RS/RNCP déjà disponibles.</p>
-                        <ul >
-                           <li class="eli">
-                              <img src="assets/img/bullseye.svg"> Habilitation RS/RNCP
-                           </li>
-                           <li class="eli">
-                              <img src="assets/img/bullseye.svg"> Formation 100% adaptée
-                           </li>
-                           <li class="eli">
-                              <img src="assets/img/bullseye.svg"> Guide complet
-                           </li>
-                           <li class="eli">
-                           <img src="assets/img/bullseye.svg"> 100% pris en charge
-                           </li>
-                        </ul>
+        <div class="col-md-6">
+          <h1 class="title">La formation professionelle faite pour vous.</h1>
                      </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <img src="../../images/1.png" class="img-fluid mx-auto d-block">
                   </div>
                </div>
-            <!-- form préstation -->
-               <div class="col-md-6 data-form">
-                  <form class="border-form center-form animate__animated animate__backInRight">
-                     <h3 class="title_form">
-                        <strong>Ecrivez-nous</strong>
-                     </h3>
                      <div class="row">
-                        <div class="col-md-6 mb-3 ">
-                           <input type="text" name="prenom" id="prenom" class="form-control case" placeholder="Prénom" >
+        <div class="col-md-6">
+          <p class="text">Découvrez comment nos formations professionnelles, reconnues et certifiées par l'État, peuvent améliorer les compétences de vos salariés et renforcer votre entreprise.</p>
+          <a href="#">Nos formations</a>
                         </div>
-                        <div class="col-md-6 mb-3 form-group">
-                           <input type="text" name="nom" id="nom" class="form-control  case" placeholder="Nom">
+                        </div>
+    </section>
+                     </div>
+
+    <section class="services">
+      <div class="container">
+        <h1>Nos <span>services</span></h1>
+                     <div class="row">
+          <div class="col-md-4">
+            <div class="service-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-files sb" viewBox="0 0 16 16">
+                <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1M3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/>
+              </svg>          
+              <h3>Un programme de formation accessible et efficace</h3>
+              <p>Nos formations sont conçues pour répondre aux besoins spécifiques des salariés et des entreprises.</p>
+              <a data-bs-target="#exampleModalToggle1" data-bs-toggle="modal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+                  <path d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0"/>
+                </svg></a>
+                        </div>
+                        </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-card-list sb" viewBox="0 0 16 16">
+                <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8m0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+              </svg>
+              <h3>Des formations adaptées à tous les secteurs</h3>
+              <p>Nos programmes couvrent un large éventail de secteurs d'activité, garantissant ainsi que chaque entreprise trouve des formations adaptées à ses besoins.</p>
+              <a data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+                  <path d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0"/>
+                </svg></a>
+                        </div>
+                     </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-person-video2 sb" viewBox="0 0 16 16">
+                <path d="M10 9.05a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                <path d="M2 1a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zM1 3a1 1 0 0 1 1-1h2v2H1zm4 10V2h9a1 1 0 0 1 1 1v9c0 .285-.12.543-.31.725C14.15 11.494 12.822 10 10 10c-3.037 0-4.345 1.73-4.798 3zm-4-2h3v2H2a1 1 0 0 1-1-1zm3-1H1V8h3zm0-3H1V5h3z"/>
+              </svg>
+              <h3>Des formateurs experts et expérimentés</h3>
+              <p>Nous collaborons avec des formateurs experts dans leur domaine, dotés d'une vaste expérience pratique.</p>
+              <a data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+                  <path d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0"/>
+                </svg></a>
+                        </div>
                         </div>
                      </div>
                      <div class="row">
-                        <div class="col-md-6 mb-3 form-group">
-                           <input type="email" name="email" id="email" class=" form-control case" placeholder="Email" required value>
-                        </div>
-                        <div class="col-md-6 mb-3 form-group">
-                           <input type="tel" name="tel" id="tel" class="form-control  case" placeholder="Télephone" required value>
-                        </div>
-                     </div>
-                     <div class="row">
-                        <div class="col-md-12 mb-3 form-group">
-                           <select class="form-select case" name="formation" id="formation" aria-label="Default select example">
-                                 <option selected>Formation souhaitée</option>
-                                 <option value="1">Bureautique</option>
-                                 <option value="2">Création digitale</option>
-                                 <option value="3">Développement Web/Mobile</option>
-                                 <option value="4">Langues</option>
-                                 <option value="5">Management</option>
-                                 <option value="6">Réseaux sociaux et communication</option>
-                                 <option value="7">Force de vente et négociation commerciales</option>
-                                 <option value="8">Gérer son Entreprise</option>
-                                 <option value="9">Bien-être au travail</option>
-                                 <option value="10">Bien s'orienter</option>
-                                 <option value="11">Secrétariat</option>
-                                 <option value="12">Décoration, architecture et design</option>
-                                 <option value="13">Immobilier</option>
-                                 <option value="14">Assurance</option>
-                                 <option value="15">CAP Esthétique</option>
-                                 <option value="16">Autres</option>
-                           </select>
+          <div class="col-md-4">
+            <div class="service-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-calendar-event sb" viewBox="0 0 16 16">
+                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
+                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+              </svg>        
+              <h3>Une flexibilité pour faciliter l'apprentissage</h3>
+              <p>Comprenant les contraintes de temps des entreprises et de leurs salariés, nous offrons des formations flexibles.</p>
+              <a data-bs-target="#exampleModalToggle4" data-bs-toggle="modal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+                  <path d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0"/>
+                </svg></a>
                         </div>
                      </div>
-                     <div class="row">
-                        <h5 class="title_form">Posez un créneau</h5>
-                     </div>
-                     <div class="row">
-                        <div class="col-md-6 mb-3 form-group">
-                           <input type="date" name="DRappel" id="DRappel" class="form-control case" >
-                        </div>
-                        <div class="col-md-6 mb-3 form-group">
-                           <input type="time" name="HRappel" id="HRappel" class="form-control case">
-                        </div>
-                     </div>
-                     <div class="row">
-                        <div class="form-group col-md-12 mb-3">
-                           <textarea name="msg" id="msg" class="form-control case" placeholder="Message" required></textarea>
+          <div class="col-md-4">
+            <div class="service-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-patch-question-fill sb" viewBox="0 0 16 16">
+                <path d="M5.933.87a2.89 2.89 0 0 1 4.134 0l.622.638.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01zM7.002 11a1 1 0 1 0 2 0 1 1 0 0 0-2 0m1.602-2.027c.04-.534.198-.815.846-1.26.674-.475 1.05-1.09 1.05-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.7 1.7 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745.336 0 .504-.24.554-.627"/>
+              </svg>
+              <h3>Comment bénéficier de nos formations</h3>
+              <p>Pour bénéficier de nos formations certifiées par l'État, il vous suffit de nous contacter pour discuter des besoins spécifiques de votre entreprise.</p>
+              <a data-bs-target="#exampleModalToggle5" data-bs-toggle="modal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+                  <path d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0"/>
+                </svg></a>
                         </div>
                      </div>
-                     <div class="row">
-                        <div class="col-md-12 button_send text-center">
-                           <button type="submit" class="btn btn-lg btn-outline-dark " >Envoyer</button>
-                        </div>
-                     </div>
-                  </form>
+          <div class="col-md-4">
+            <div class="service-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-chat-left-dots-fill sb" viewBox="0 0 16 16">
+                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+              </svg>
+              <h3>Témoignages de nos clients</h3>
+              <p>Aucune donnée pour le moment.</p>
+              <a data-bs-target="#exampleModalToggle6" data-bs-toggle="modal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+                  <path d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0"/>
+                </svg></a>
                </div>
             </div>
          </div>
-         <div class="row">
-            <div class="col-md-12">
-               <h2>Nos Formations</h2>
-            </div>
-         </div>
-         <!-- carousel -->
-      <div class="row carousel">
-         <div class="col-md-12">
-         <div class="card__container swiper">
-            <div class="card__content">
-               <div class="swiper-wrapper">
-                  <article class="card__article swiper-slide">
-                     <div class="card__image">
-                        <img src="assets/img/bureautique.webp" alt="bureautique" class="card__img">
-                        <div class="card__shadow"></div>
                      </div>
-                     <div class="card__data">
-                        <h3 class="card__name">Bureautique</h3>
-                        <p class="card__description">
-                           Excel - Word - PP - Pack office...
-                        </p>
-                        <a href="Bureautique/index.html" class="card__button">View More</a>
-                     </div>
-                  </article>
-                  <article class="card__article swiper-slide">
-                     <div class="card__image">
-                        <img src="assets/img/creaD.webp" alt="image" class="card__img">
-                        <div class="card__shadow"></div>
-                     </div>
-      
-                     <div class="card__data">
-                        <h3 class="card__name">Création digitale</h3>
-                        <p class="card__description">
-                           Suite Adobe - Illutrator - InDesign...
-                        </p>
-      
-                        <a href="Création_digitale/index.html" class="card__button">View More</a>
-                     </div>
-                  </article>
-      
-                  <article class="card__article swiper-slide">
-                     <div class="card__image">
-                        <img src="assets/img/dev.webp" alt="image" class="card__img">
-                        <div class="card__shadow"></div>
-                     </div>
-      
-                     <div class="card__data">
-                        <h3 class="card__name">Développement Web / Mobile</h3>
-                        <p class="card__description">
-                           HTML/CSS/JS/PHP - JQUERY - Java - C/C++ ...
-                        </p>
-      
-                        <a href="Développement_Web/index.html" class="card__button">View More</a>
-                     </div>
-                  </article>
-      
-                  <article class="card__article swiper-slide">
-                     <div class="card__image">
-                        <img src="assets/img/langues.webp" alt="image" class="card__img">
-                        <div class="card__shadow"></div>
-                     </div>
-      
-                     <div class="card__data">
-                        <h3 class="card__name">Langues</h3>
-                        <p class="card__description">
-                           Anglais - Espagnol - Francais - Allemand...
-                        </p>
-      
-                        <a href="Langues/index.html" class="card__button">View More</a>
-                     </div>
-                  </article>
+    </section>
 
-                  <article class="card__article swiper-slide">
-                     <div class="card__image">
-                        <img src="assets/img/management.webp" alt="image" class="card__img">
-                        <div class="card__shadow"></div>
+    <section class="partenaires">
+      <div class="container">
+        <h1>Nos <span>partenaires</span></h1>
+        <div class="row row-cols-3 row-cols-md-5 g-3">
+          <div class="col">
+            <div class="card h-200">
+              <a href="https://www.afdas.com/"><img src="../../images/partenaires/afdas.png" class="card-img-top"></a>
                      </div>
-      
-                     <div class="card__data">
-                        <h3 class="card__name">Management</h3>
-                        <p class="card__description">
-                           texte accroche management
-                        </p>
-      
-                        <a href="Management/index.html" class="card__button">View More</a>
                      </div>
-                  </article>
-
-                  <article class="card__article swiper-slide">
-                     <div class="card__image">
-                        <img src="assets/img/reseaux.webp" alt="image" class="card__img">
-                        <div class="card__shadow"></div>
+          <div class="col">
+            <div class="card h-200">
+              <a href="https://communication-agefice.fr/"><img src="../../images/partenaires/agefice.png" class="card-img-top"></a>
                      </div>
-      
-                     <div class="card__data">
-                        <h3 class="card__name">Reseaux sociaux et communication</h3>
-                        <p class="card__description">
-                           texte accroche Reseaux sociaux
-                        </p>
-      
-                        <a href="Réseaux sociaux et communication/index.html" class="card__button">View More</a>
                      </div>
-                  </article>
-
-                  <article class="card__article swiper-slide">
-                     <div class="card__image">
-                        <img src="assets/img/management.webp" alt="image" class="card__img">
-                        <div class="card__shadow"></div>
+          <div class="col">
+            <div class="card h-200">
+              <a href="https://www.agefiph.fr/"><img src="../../images/partenaires/agefiph.png" class="card-img-top"></a>
                      </div>
-      
-                     <div class="card__data">
-                        <h3 class="card__name">Force de vente et négociation commerciales</h3>
-                        <p class="card__description">
-                           texte accroche Force de vente et négociation commerciales
-                        </p>
-      
-                        <a href="Force de vente et négociation commerciales/index.html" class="card__button">View More</a>
                      </div>
-                  </article>
-
-                  <article class="card__article swiper-slide">
-                     <div class="card__image">
-                        <img src="assets/img/gestion_entreprise.webp" alt="image" class="card__img">
-                        <div class="card__shadow"></div>
+          <div class="col">
+            <div class="card h-200">
+              <a href="https://www.akto.fr/"><img src="../../images/partenaires/akto.png" class="card-img-top"></a>
                      </div>
-      
-                     <div class="card__data">
-                        <h3 class="card__name">Gérer son entreprise</h3>
-                        <p class="card__description">
-                           texte accroche Gérer son entreprise
-                        </p>
-      
-                        <a href="Gérer son entreprise/index.html" class="card__button">View More</a>
                      </div>
-                  </article>
-
-                  <article class="card__article swiper-slide">
-                     <div class="card__image">
-                        <img src="assets/img/bien-être.webp" alt="image" class="card__img">
-                        <div class="card__shadow"></div>
+          <div class="col">
+            <div class="card h-200">
+              <a href="https://www.opco-atlas.fr/"><img src="../../images/partenaires/atlas.png" class="card-img-top"></a>
                      </div>
-      
-                     <div class="card__data">
-                        <h3 class="card__name">Bien être au travail</h3>
-                        <p class="card__description">
-                           texte accroche Bien être au travail
-                        </p>
-      
-                        <a href="Bien être au travail/index.html" class="card__button">View More</a>
                      </div>
-                  </article>
-
-                  <article class="card__article swiper-slide">
-                     <div class="card__image">
-                        <img src="assets/img/orientation.webp" alt="image" class="card__img">
-                        <div class="card__shadow"></div>
+          <div class="col">
+            <div class="card h-200">
+              <a href="https://www.constructys.fr/"><img src="../../images/partenaires/constructys.png" class="card-img-top"></a>
                      </div>
-      
-                     <div class="card__data">
-                        <h3 class="card__name">Bien s'orienter</h3>
-                        <p class="card__description">
-                           texte accroche Bien s'orienter
-                        </p>
-      
-                        <a href="Bien s'orrienter/index.html" class="card__button">View More</a>
                      </div>
-                  </article>
-
-                  <article class="card__article swiper-slide">
-                     <div class="card__image">
-                        <img src="assets/img/secretariat.webp" alt="image" class="card__img">
-                        <div class="card__shadow"></div>
+          <div class="col">
+            <div class="card h-200">
+            <a href="https://www.fifpl.fr/"><img src="../../images/partenaires/fifpl.png" class="card-img-top"></a>
                      </div>
-      
-                     <div class="card__data">
-                        <h3 class="card__name">Secrétariat</h3>
-                        <p class="card__description">
-                           texte accroche secretariat
-                        </p>
-      
-                        <a href="Secrétariat/index.html" class="card__button">View More</a>
                      </div>
-                  </article>
-
-                  <article class="card__article swiper-slide">
-                     <div class="card__image">
-                        <img src="assets/img/déco.webp" alt="image" class="card__img">
-                        <div class="card__shadow"></div>
+          <div class="col">
+            <div class="card h-200">
+            <a href="https://www.lopcommerce.com/"><img src="../../images/partenaires/lopcommerce.png" class="card-img-top"></a>
                      </div>
-      
-                     <div class="card__data">
-                        <h3 class="card__name">Décoration, architecture et design</h3>
-                        <p class="card__description">
-                           texte accroche Décoration, architecture et design
-                        </p>
-      
-                        <a href="Décoration, architecture et design/index.html" class="card__button">View More</a>
                      </div>
-                  </article>
-
-                  <article class="card__article swiper-slide">
-                     <div class="card__image">
-                        <img src="assets/img/immobilier.webp" alt="image" class="card__img">
-                        <div class="card__shadow"></div>
+          <div class="col">
+            <div class="card h-200">
+            <a href="https://www.ocapiat.fr/"><img src="../../images/partenaires/ocapiat.png" class="card-img-top"></a>
                      </div>
-      
-                     <div class="card__data">
-                        <h3 class="card__name">Immobilier</h3>
-                        <p class="card__description">
-                           texte accroche Immobilier
-                        </p>
-      
-                        <a href="immobilier/index.html" class="card__button">View More</a>
                      </div>
-                  </article>
-
-                  <article class="card__article swiper-slide">
-                     <div class="card__image">
-                        <img src="assets/img/assurance.webp" alt="image" class="card__img">
-                        <div class="card__shadow"></div>
+          <div class="col">
+            <div class="card h-200">
+            <a href="https://www.opco2i.fr/"><img src="../../images/partenaires/opco_2i.jpg" class="card-img-top"></a>
                      </div>
-      
-                     <div class="card__data">
-                        <h3 class="card__name">Assurances</h3>
-                        <p class="card__description">
-                           texte accroche Assurance
-                        </p>
-      
-                        <a href="Assurance/index.html" class="card__button">View More</a>
                      </div>
-                  </article>
-
-                  <article class="card__article swiper-slide">
-                     <div class="card__image">
-                        <img src="assets/img/esthetique.webp" alt="image" class="card__img">
-                        <div class="card__shadow"></div>
+          <div class="col">
+            <div class="card h-200">
+            <a href="https://www.opcoep.fr/"><img src="../../images/partenaires/opco_ep.png" class="card-img-top"></a>
                      </div>
-      
-                     <div class="card__data">
-                        <h3 class="card__name">CAP Esthétique</h3>
-                        <p class="card__description">
-                           texte accroche CAP Esthétique
-                        </p>
-      
-                        <a href="CAP_Esthetique/index.html" class="card__button">View More</a>
                      </div>
-                  </article>
-
-                  <article class="card__article swiper-slide">
-                     <div class="card__image">
-                        <img src="assets/img/formation.webp" alt="image" class="card__img">
-                        <div class="card__shadow"></div>
+          <div class="col">
+            <div class="card h-200">
+            <a href="https://www.opcomobilites.fr/"><img src="../../images/partenaires/opco_mobilites.png" class="card-img-top"></a>
                      </div>
-      
-                     <div class="card__data">
-                        <h3 class="card__name">Formation disponible sur demande</h3>
-                        <p class="card__description">
-                           texte accroche Formation disponible sur demande
-                        </p>
-      
-                        <a href="" class="card__button">View More</a>
                      </div>
-                  </article>
-
-                  
+          <div class="col">
+            <div class="card h-200">
+            <a href="https://www.opco-sante.fr/accueil"><img src="../../images/partenaires/opco_sante.png" class="card-img-top"></a>
+                     </div>
+                     </div>
+          <div class="col">
+            <div class="card h-200">
+            <a href="https://www.uniformation.fr/"><img src="../../images/partenaires/uniformation.png" class="card-img-top"></a>
+                     </div>
+                     </div>
                </div>
             </div>
+    </section>
 
-            <!-- Navigation buttons -->
-            <div class="swiper-button-next">
-               <i class="ri-arrow-right-s-line"></i>
+    <section class="certifications">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+           <img src="../../images/2.png" class="img-fluid mx-auto d-block">
             </div>
-            
-            <div class="swiper-button-prev">
-               <i class="ri-arrow-left-s-line"></i>
+          <div class="col-md-1">
             </div>
-
-            <!-- Pagination -->
-            <div class="swiper-pagination"></div>
+          <div class="col-md-6">
+            <h1>Nos <span>certifications</span></h1>
+              <p>Chez NK Fromation, nous nous engageons à offrir des formations de haute qualité grâce à notre équipe de formateurs professionnels.
+                Tous nos formateurs sont certifiés Qualiopi et reconnus par Mon Compte Formation de Pôle emploi.
+                Leur expertise et leur expérience vous garantissent un apprentissage enrichissant et adapté à vos besoins professionnels.</p>
+              <img src="../../images/certifications.png" class="img-fluid mx-auto d-block">
          </div>
       </div>
    </div>
       </section>
 
-      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-         <div class="modal-dialog modal-dialog-centered">
-           <div class="modal-content">
-             <div class="modal-header">
-               <h1 class="modal-title fs-5" id="staticBackdropLabel">Connexion</h1>
-               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <section class="contact">
+      <div class="container">
+        <h1 class="title">Contactez-nous</h1>
+        <div class="card">
+          <div class="img-avatar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-raised-hand" viewBox="0 0 16 16">
+              <path d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a1 1 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207"/>
+              <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+            </svg>
              </div>
-             <div class="modal-body">
-               <div class="position-relative">
-                 <label for="validationTooltipUsername" class="form-label">Identifiant</label>
-                 <div class="input-group has-validation">
-                   <input type="text" class="form-control d-inline-flex focus-ring focus-ring-secondary py-1 px-2 text-decoration-none border rounded-2" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+          <div class="card-text">
+            <div class="mid-card">
                  </div>
+            <div class="title-total">   
+              <div class="little-title">NK Formation</div>
+              <h2>Coordonnées</h2>
+          <div class="desc">
+            Lundi au vendredi (jours fériés compris)<br>
+            9h à 19h<br>
+            Nous vous répondrons sous 30 minutes maximum.
                </div>
-               <label for="inputPassword5" class="form-label">Mot de passe</label>
-               <input type="password" id="inputPassword5" class="form-control d-inline-flex focus-ring focus-ring-secondary py-1 px-2 text-decoration-none border rounded-2" aria-describedby="passwordHelpBlock">
+          <div class="actions">
+            <a href="tel:07 82 71 47 54"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-telephone-fill cl" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+            </svg></a>
+            <a href="mailto:contact@nkformationfrance.fr"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-envelope-fill cl" viewBox="0 0 16 16">
+              <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+            </svg></a>
+            <a href="https://www.google.fr/maps/place/56+Rue+Alexis+Perroncel,+69100+Villeurbanne/@45.7749434,4.8738345,17z/data=!3m1!4b1!4m6!3m5!1s0x47f4c02719e92ad7:0x10d8c4275f6b4aa3!8m2!3d45.7749434!4d4.8764094!16s%2Fg%2F11c5j408s3?entry=ttu"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-pin-angle-fill cl" viewBox="0 0 16 16">
+              <path d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a6 6 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707s.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a6 6 0 0 1 1.013.16l3.134-3.133a3 3 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146"/>
+            </svg></a>
+          </div></div>
              </div>
-             <div class="modal-footer">
-               <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Annuler</button>
-               <button type="submit" class="btn btn-connexion">Connexion</button>
              </div>
            </div>
-         </div>
-       </div>
+    </section>
 
-      
-      <footer>
-         <div class="footer-contact">
-            <div class="footer-left">
-               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-person-circle footer-img" viewBox="0 0 16 16">
-                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-               </svg>
-               <p>NK Formation</p>
-            </div>
-            <div class="footer-right">
-               <a href="https://wa.me/0782714754" class="footer-button whatsapp"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-                  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-               </svg></a>
-               <a href="https://www.facebook.com/profile.php?id=100088551595262" class="footer-button facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-               </svg></a>
-               <a href="https://www.linkedin.com/company/nk-formation/" class="footer-button linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-               </svg></a>
-               <a href="https://www.instagram.com/nkformation/" class="footer-button instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-               </svg></a>
-            </div>
+    <footer>
+      <div class="footer-contact">
+         <div class="footer-left">
+            <p>NK Formation</p>
          </div>
-      </footer>
+         <div class="footer-right">
+            <a href="https://wa.me/0782714754" class="footer-button whatsapp"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+               <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+            </svg></a>
+            <a href="https://www.facebook.com/profile.php?id=100088551595262" class="footer-button facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+               <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg></a>
+            <a href="https://www.linkedin.com/company/nk-formation/" class="footer-button linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+               <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+            </svg></a>
+            <a href="https://www.instagram.com/nkformation/" class="footer-button instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+               <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            </svg></a>
+         </div>
+      </div>
+   </footer>
 
    <footer class="mt-auto text-black-50 footer-infos">
+  <div class="container">
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
          <li class="nav-item">
             <a href="index.html" class="nav-link px-2 text-body-secondary">Accueil</a>
          </li>
          <li class="nav-item">
-            <a href="formations.html" class="nav-link px-2 text-body-secondary">Catalogue de formations</a>
+        <a href="#" class="nav-link px-2 text-body-secondary">Catalogue de formations</a>
          </li>
          <li class="nav-item">
-            <a href="contact.html" class="nav-link px-2 text-body-secondary">Nous contacter</a>
+        <a href="#" class="nav-link px-2 text-body-secondary">Nous contacter</a>
          </li>
          <li class="nav-item">
-            <a href="connexion.html" class="nav-link px-2 text-body-secondary">Mon espace</a>
+        <a href="index.html" class="nav-link px-2 text-body-secondary">Mon espace</a>
          </li>
       </ul>
    <p class="text-center text-body-secondary">© 2024 NK Formation France<br>Politique de confidentialité Mentions légales.</p>
+  </div>
    </footer>
-  
 
-      <!--=============== SWIPER JS ===============-->
-      <script src="assets/js/swiper-bundle.min.js"></script>
+<a class="top" href="#top">
+  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/>
+  </svg>
+</a>
 
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
-   </body>
+<!-- Modal 1 -->
+<div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel1" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel1">En savoir plus</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Grâce au financement intégral de nos partenaires, nous offrons des cours de haute qualité sans aucun coût pour vos employés ou votre organisation.
+        Que vous cherchiez à améliorer les compétences techniques, managériales ou interpersonnelles de votre équipe, nous avons le programme qui vous convient.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">En savoir plus</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Que vous soyez dans l'industrie, les services, la technologie, ou toute autre domaine, nos formations sont conçues pour être pertinentes et immédiatement applicables sur le terrain.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel3">En savoir plus</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Ils utilisent des méthodes pédagogiques modernes et interactives pour s'assurer que chaque participant tire le maximum de chaque session.
+        Nos formateurs sont dédiés à aider les salariés à atteindre leur plein potentiel et à contribuer efficacement à leur entreprise.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal fade" id="exampleModalToggle4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel4" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel4">En savoir plus</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Toutes nos formations se font en ligne, vous permettant de décider quand vous voulez vous former.
+        Cela vous garantit que les formations n'interfèrent pas avec les responsabilités professionnelles et vous apporte une possibilité d'apprendre depuis chez vous.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 5 -->
+<div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel5" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel5">En savoir plus</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Nous vous accompagnerons dans le processus de sélection des formations appropriées et nous nous occuperons de toutes les formalités administratives nécessaires pour garantir que vos salariés bénéficient de cette opportunité exceptionnelle sans tracas.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 6 -->
+<div class="modal fade" id="exampleModalToggle6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel6" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel6">En savoir plus</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        N'hésitez pas à nous laisser un avis afin de permettre à de potentiels clients de nous apprendre avant même de nous contacter.
+      </div>
+    </div>
+  </div>
+</div>
+
       <!-- Modal Connexion -->
       <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
          <div class="modal-dialog modal-dialog-centered">
@@ -523,16 +444,16 @@
          </div>
       </div>
 
-<!-- ==========SIDEBAR JS========== -->
-<script>
-   function showSidebar(){
-      const sidebar = document.querySelector('.sidebar')
-      sidebar.style.display = 'flex'
-   }
-   function hideSidebar(){
-      const sidebar = document.querySelector('.sidebar')
-      sidebar.style.display = 'none'
-   }
-</script>
-         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</html>
+      <script>
+         function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+         }
+         function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+         }
+      </script>
+               <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      </body>  
+      </html>
