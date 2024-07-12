@@ -1,37 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
 /* NAVBAR */
 nav {
-  background-color: #e2e2e2;
-  box-shadow: 0 0 10px #E5BF9E;
-  background-image: linear-gradient(243deg,#E5BF9E 0, #E5D4BC 100%);
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background-image: linear-gradient(243deg,#0017A1 0, #011378 100%);
+  box-shadow: 0 0 10px #0017A1;
   font-size: larger;
 }
-
 nav .logo {
-  width: 8%;
+  width: 15%;
+  margin-top: 15px;
   margin-right: 15px;
 }
-
 nav .name {
   color: #fff;
   font-weight: bold;
+  text-shadow: 0 0 10px #fff;
 }
-
 nav ul {
-  padding: 8px;
+  padding: 10px;
   width: 100%;
   list-style: none;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-
-nav li {
-  height: 50px;
+nav .hideOnMobile {
+  margin-top: 70px;
+  margin-bottom: 60px;
 }
-
 nav a {
   height: 100%;
-  padding: 0 15px;
+  padding: 0 1px;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   text-decoration: none;
@@ -41,16 +52,14 @@ nav a {
   font-weight: bold;
   border-bottom: .20rem solid transparent;
 }
-
 nav .active {
+  border-bottom-width: 0.3rem;
   border-bottom-color: #fff;
 }
-
 nav a:hover {
   color: #eaeaea;
   border-bottom-color: #fff;
 }
-
 nav li:first-child {
   margin-right: auto;
 }
@@ -61,7 +70,7 @@ nav li:first-child {
   right: 0;
   height: 100vh;
   width: 250px;
-  background-image: linear-gradient(243deg,#E5BF9E 0, #E5D4BC 100%);
+  background-image: linear-gradient(243deg,#0017A1 0, #011378 100%);
   backdrop-filter: blur(12px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   list-style: none;
@@ -71,13 +80,12 @@ nav li:first-child {
   justify-content: flex-start;
   z-index: 99;
 }
-
-.sidebar li {
-  width: 100%;
-}
-
 .sidebar a {
   width: 100%;
+}
+.sidebar li {
+  margin-top:15px;
+  margin-bottom: 15px;
 }
 
 .menu-button {
@@ -107,7 +115,7 @@ ul
 {
 list-style-type: none;
 }
-svg{
+.container-fluid svg{
     color: black;
 }
 a{
@@ -329,98 +337,14 @@ iframe{
   } */
 
   /*=================NAV-BAR MEDIA============*/
-@media(max-width: 800px){
-  .hideOnMobile{
-    display: none;
-  }
-  .menu-button{
-    display: block;
-  }
-}
 
-@media(max-width: 400px){
-  .nav .logo,
-  .nav .name {
-  font-size: 0.8rem;
-  }
-
-  .presentation .title {
-    font-size: 2rem;
-  }
-  
-  .presentation img {
-    display: none;
-  }
-
-  .sidebar{
-    width: 100%;
-  }
-  .logo{
-    width: 100%;
-  }
-
-  .contact .title {
-    font-size: 2.8rem;
-  }
-
-  .contact .card {
-    max-width: 300px;
-    height: 300px;
-  }
-
-  .contact .card .little-title {
-    padding: 0.5rem;
-    padding-right: 2rem;
-  }
-
-  .contact .card .desc {
-    font-size: 10px;
-  }
-
-  .contact .card .actions svg {
-    width: 30px;
-  }
-
-  .contact .card .portada {
-    height: 300px;
-  }
-
-  .contact .img-avatar {
-    left: 60px;
-  }
-
-  .footer-contact {
-   display: block;
-   height: 90px;
-  }
-
-  .footer-contact p {
-    font-size: 0.8em;
-  }
-
-  .footer-contact .footer-img {
-    width: 20px;
-  }
-
-  .footer-contact .footer-right {
-    justify-content: none;
-  }
-
-  .footer-contact .footer-button {
-    padding: 5px 10px;
-  }
-
-  .footer-contact svg {
-    width: 70%;
-  }
-}
 /* FOOTER */
 .footer-contact {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to right, #E5BF9E, #E5D4BC);
-  box-shadow: 0 0 10px #E5BF9E;
+  background: linear-gradient(to right, #0017A1, #011378);
+  box-shadow: 0 0 10px #0017A1;
   border-radius: 20px;
   position: fixed;
   width: 90%;
@@ -431,29 +355,21 @@ iframe{
   bottom: 1px;
   z-index: 99;
 }
-
 .footer-contact .footer-left {
   display: flex;
 }
-
 .footer-contact p {
   font-size: 1.5em;
   font-weight: bold;
   margin-left: 10px;
+  color: #fff;
+  text-shadow: 0 0 10px #fff;
 }
-
-.footer-contact .footer-img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-
 .footer-contact .footer-right {
   display: flex;
   gap: 10px;
   justify-content: flex-end;
 }
-
 .footer-contact .footer-button {
   padding: 10px 20px;
   font-size: 1em;
@@ -467,31 +383,99 @@ iframe{
   align-items: center;
   justify-content: center;
 }
-
 .footer-contact .footer-button:hover {
   transform: scale(1.05);
 }
-
 .footer-contact .whatsapp {
   background-color: #25D366;
   box-shadow: 0 0 10px #25D366;
 }
-
 .footer-contact .facebook {
   background-color: #0866FF;
   box-shadow: 0 0 10px #0866FF;
 }
-
 .footer-contact .linkedin {
   background-color: #0A66C2;
   box-shadow: 0 0 10px #0A66C2;
 }
-
 .footer-contact .instagram {
   background: linear-gradient(to right, #f58529, #dd2a7b, #8134af, #515bd4);
   box-shadow: 0 0 10px #515bd4;
 }
-
 .footer-infos {
   margin-bottom: 150px;
+}
+
+/* MODAL */
+.modal .btn-close {
+  background-color: #ffffffbd;
+  border: #000 1px solid;
+  box-shadow: 0 0 10px #fff;
+}
+.modal .modal-header {
+  background: linear-gradient(to right, #0017A1, #011378);
+}
+.modal .modal-title {
+  color: #fff;
+  text-shadow: 0 0 10px #fff;
+  font-weight: 800;
+}
+.modal .modal-content {
+  box-shadow: 0 0 10px #0017A1;
+}
+.modal .input-group {
+  margin-bottom: 15px;
+}
+.modal input {
+  box-shadow: 0 0 10px #0017A1;
+}
+.modal .btn-connexion {
+  background-color: #0017A1;
+  box-shadow: 0 0 10px #0017A1;
+  font-weight: 600;
+  color: #fff;
+}
+.modal .btn-connexion:hover {
+  background-color: #011378;
+  color: #fff;
+}
+
+@media(max-width: 800px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+}
+
+@media(max-width: 500px){
+  .nav .logo,
+  .nav .name {
+  font-size: 0.8rem;
+  }
+
+  .sidebar{
+    width: 100%;
+  }
+  .logo{
+    width: 100%;
+  }
+
+  .footer-contact {
+   display: block;
+   height: 90px;
+  }
+  .footer-contact p {
+    font-size: 0.8em;
+  }
+  .footer-contact .footer-right {
+    justify-content: none;
+  }
+  .footer-contact .footer-button {
+    padding: 5px 10px;
+  }
+  .footer-contact svg {
+    width: 70%;
+  }
 }
