@@ -425,6 +425,7 @@ nav li:first-child {
   border-radius: 50%;
   display: block;
   text-align: center;
+  align-content: center;
   position: fixed;
   bottom: -20px;
   right: 20px;
@@ -434,7 +435,6 @@ nav li:first-child {
 .top svg {
   color: #fff;
   font-size: 25px !important;
-  padding-top: 6px;
 }
 .top:hover {
   background: #011378;
@@ -473,6 +473,10 @@ nav li:first-child {
 .modal .btn-connexion:hover {
   background-color: #011378;
   color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 0%;
 }
 
 /* MEDIA QUERIES */
