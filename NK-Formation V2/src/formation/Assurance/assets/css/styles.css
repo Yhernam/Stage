@@ -110,7 +110,7 @@ nav li:first-child {
 .menu-button {
   display: none;
 }
-/* FOOTER */
+/*================ FOOTER ===============*/
 .footer-contact {
   display: flex;
   justify-content: space-between;
@@ -192,7 +192,7 @@ nav li:first-child {
 .footer-infos {
   margin-bottom: 150px;
 }
-/*=============== BASE ===============*/
+/*==================== BASE ====================*/
 
 * {
   box-sizing: border-box;
@@ -245,7 +245,10 @@ h1{
   padding-left: 3px;
   text-align: start;
 }
-/*=============== CARD ===============*/
+section{
+  
+}
+/*==================== CARD ====================*/
 .container-fluid {
  display: flex;
  justify-content: space-around;
@@ -333,7 +336,7 @@ h1{
   font-weight: 600;
 }
 
-/* Modal connexion */
+/* ================ Modal connexion ===============*/
 .modal .btn-close {
   background-color: #ffffffbd;
   border: #000 1px solid;
@@ -375,7 +378,7 @@ h1{
   background-color: #0017A1;
 }
 
-/*=======Modal info======*/
+/*============ Modal info ===========*/
 /* Styles généraux */
 
 
@@ -384,12 +387,7 @@ h1{
   vertical-align: middle;
 }
 
-/* Cacher le texte d'information et afficher le bouton de remplacement pour les petits écrans */
-@media (max-width: 768px) {
-  .info {
-    display: none; /* Cacher le texte d'information */
-  }
-}
+
 
 /* Styles pour la modale */
 .info-modal {
@@ -439,7 +437,7 @@ h1{
 
 
 
-/* Swiper class */
+/* ===================== Swiper class =====================*/
 .swiper-button-prev:after,
 .swiper-button-next:after {
   content: "";

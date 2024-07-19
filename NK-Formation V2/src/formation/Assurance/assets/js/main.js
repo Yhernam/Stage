@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Remplacer le texte de l'étiquette en fonction de la taille de la fenêtre
     function replaceInfoLabelText() {
       if (window.innerWidth <= 991) {
-        infoLabel.textContent = 'Cliquez pour plus d\'infos';
+        infoLabel.textContent = 'Info';
       } else {
         infoLabel.textContent = infoLabel.dataset.originalText; // Utiliser le texte original stocké dans data-original-text
       }
