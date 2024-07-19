@@ -407,11 +407,11 @@ h1{
   border-radius: 8px;
 }
 
-.info-modal .btn-close {
-  /*background-color: #ffffffbd;
+/* .info-modal .btn-close {
+  background-color: #ffffffbd;
   border: #000 1px solid;
-  box-shadow: 0 0 10px #fff;*/
-}
+  box-shadow: 0 0 10px #fff;
+} */
 .info-modal .modal-title {
   color: #fff;
   text-shadow: 0 0 10px #fff;
