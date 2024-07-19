@@ -87,7 +87,6 @@ nav li:first-child {
   margin-top:15px;
   margin-bottom: 15px;
 }
-
 .menu-button {
   display: none;
 }
@@ -136,14 +135,14 @@ nav li:first-child {
 }
 
 .services {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin: 200px;
   padding: 100px;
+  border-radius: 2%;
   background-color: antiquewhite;
   box-shadow: 0 0 10px #00000025;
 }
 .services h1 {
-  margin-top: 100px;
+  margin-top: 30px;
   margin-bottom: 60px;
   font-weight: 800;
   text-shadow: 0 0 15px #000000d3;
@@ -205,11 +204,11 @@ nav li:first-child {
 
 /* PARTENAIRES */
 .partenaires {
+  margin: 200px;
   padding: 100px;
-  margin: 1em;
 }
 .partenaires h1 {
-  margin-top: 100px;
+  margin-top: 30px;
   margin-bottom: 60px;
   font-weight: 800;
   text-shadow: 0 0 15px #000000d3;
@@ -230,14 +229,14 @@ nav li:first-child {
 
 /* CERTIFICATIONS */
 .certifications {
+  margin: 200px;
   padding: 100px;
-  margin-top: 150px;
-  margin-bottom: 150px;
+  border-radius: 2%;
   background-color: antiquewhite;
   box-shadow: 0 0 10px #00000025;
 }
 .certifications h1 {
-  margin-top: 100px;
+  margin-top: 30px;
   margin-bottom: 60px;
   font-weight: 800;
   text-shadow: 0 0 15px #000000d3;
@@ -432,7 +431,7 @@ nav li:first-child {
   background: #0017A1;
   box-shadow: 0 0 8px #000;
 }
-.top svg {
+.top a svg {
   color: #fff;
   font-size: 25px !important;
 }
