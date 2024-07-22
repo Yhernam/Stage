@@ -92,6 +92,9 @@ nav li:first-child {
 }
 
   /* FOOTER */
+footer {
+  margin-top: 100px;
+}
 .footer-contact {
   display: flex;
   justify-content: space-between;
@@ -157,6 +160,40 @@ nav li:first-child {
 }
 .footer-infos {
   margin-bottom: 150px;
+}
+
+/* MODAL */
+.modal .btn-close {
+  background-color: #ffffffbd;
+  border: #000 1px solid;
+  box-shadow: 0 0 10px #fff;
+}
+.modal .modal-header {
+  background: linear-gradient(to right, #0017A1, #011378);
+}
+.modal .modal-title {
+  color: #fff;
+  text-shadow: 0 0 10px #fff;
+  font-weight: 800;
+}
+.modal .modal-content {
+  box-shadow: 0 0 10px #0017A1;
+}
+.modal .input-group {
+  margin-bottom: 15px;
+}
+.modal input {
+  box-shadow: 0 0 10px #0017A1;
+}
+.modal .btn-connexion {
+  background-color: #0017A1;
+  box-shadow: 0 0 10px #0017A1;
+  font-weight: 600;
+  color: #fff;
+}
+.modal .btn-connexion:hover {
+  background-color: #011378;
+  color: #fff;
 }
 
 /* MEDIA QUERIES */
