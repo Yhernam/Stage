@@ -213,7 +213,7 @@ a {
 
 h1{
   color: #000;
-  text-align: center;
+
   font-size: 3.5rem;
   font-weight: 800;
 }
@@ -227,7 +227,7 @@ h1{
   display: flex;
   align-items: baseline;
   margin-bottom: 8px; /* Adjust spacing between list items */
-  color: white; /* Change text color to white */
+  color: black; /* Change text color to white */
 }
 
 .icon-text-list img {
@@ -235,7 +235,7 @@ h1{
   width: 15px;
 }
 .info{
-  border-left: 3px  solid white;
+  border-left: 3px  solid black;
   padding-left: 3px;
   text-align: start;
 }
@@ -262,7 +262,11 @@ h1{
   /* background-color: var(--first-color); */
   border-radius: 5% 5% 5% 5%;
 }
-
+.container{
+  display: block;
+  background-color: rgb(237, 227, 204) !important; 
+  border-radius: 100px;
+}
 .card__content {
 
   margin-inline: 1.75rem;
@@ -274,12 +278,17 @@ h1{
   overflow: hidden;
   padding: 2em;
 }
+.container__Title{
+  position: relative;
+  left: 7%;
+  top: 0%;
+}
 
 
 
 .card__data {
-  background-color: var(--container-color);
-  box-shadow: 0 0 15px #0017A1;
+  /* background-color: var(--container-color); */
+  /* box-shadow: 0 0 15px #0017A1; */
   padding: 1.5rem 2rem;
   border-radius: 1rem;
   text-align: center;
@@ -291,18 +300,19 @@ h1{
 .icon_Title{
   width: 15%;
 }
+
 .card__Title{
   display: flex;
-  justify-content: center;
-  align-items: end;
-  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
   gap: 10px;
 }
 
 .card__name {
   font-size: var(--h2-font-size);
   margin-bottom: .75rem;
-  color: white;
+  color: black;
   font-weight: 700;
   border-left: 5px solid black;
   display: inline-block;

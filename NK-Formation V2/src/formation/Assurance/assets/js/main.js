@@ -1,7 +1,7 @@
 /*=============== SWIPER JS ===============*/
 function initSwiper(containerSelector, paginationSelector, nextButtonSelector, prevButtonSelector) {
   return new Swiper(containerSelector + " .card__content", {
-    loop: false,
+    loop: true,
     spaceBetween: 32,
     grabCursor: true,
 
@@ -18,9 +18,9 @@ function initSwiper(containerSelector, paginationSelector, nextButtonSelector, p
 
     breakpoints:{
       600: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
-      968: {
+      991: {
         slidesPerView: 2,
       },
     },
