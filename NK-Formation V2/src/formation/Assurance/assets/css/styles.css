@@ -316,7 +316,7 @@ h1{
   align-content: flex-start;
   align-items: baseline;
   font-weight: 500;
-  margin-bottom: 1.75rem;
+  margin-bottom: 0.75rem; /* Ajuste cela pour la positon du boutton, si un alignement est nécessaire*/
 }
 
 .card__button {
