@@ -23,6 +23,9 @@
 }
 
 /*=============== BASE ===============*/
+.pdt{
+  padding-top: 550px;
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -36,7 +39,10 @@ body {
   background-color: white;
   color: black;
 }
-
+p, h1, h3,h5{
+  color: black;
+}
+/* ==================== NAV-BAR ==================== */
 nav {
   display: flex;
   align-items: center;
@@ -118,7 +124,7 @@ nav li:first-child {
 .menu-button {
   display: none;
 }
-
+/* ==================== FIN ==================== */
 a {
   text-decoration: none;
 }
@@ -128,8 +134,7 @@ a {
   max-width: 100%;
   height: auto;
 }
-
-/* première partie */
+/* ==================== FORM ====================*/
 .title_form{
   text-align: center;
 }
@@ -161,14 +166,7 @@ a {
   
 }
 
-p, h1, h3,h5{
-  color: black;
-}
-
-
-
-
-/* style form */
+/* ==================== style form ==================== */
 .data-form{
   padding: 2em;
   max-width: 350px;
@@ -197,14 +195,10 @@ p, h1, h3,h5{
 }
 
 
-/* Fin première partie */
+/* =============== Fin 1ère partie =============== */
 
-.formation_Title{
-  display: flex;
-  justify-content: center;
-}
+/*=============== CARD LISTE FOMRATION ===============*/
 
-/*=============== CARD ===============*/
 .carousel {
   display: flex;
   justify-content: center;
@@ -241,26 +235,20 @@ p, h1, h3,h5{
   position: relative;
   z-index: 10;
 }
-
 .card__img {
   margin: 0 auto;
   position: relative;
   z-index: 5;
 }
-
-
-
 .card__name {
   font-size: var(--h2-font-size);
   color: black;
   margin-bottom: .75rem;
 }
-
 .card__description {
   font-weight: 500;
   margin-bottom: 1.75rem;
 }
-
 .card__button {
   display: inline-block;
   background-color: rgb(196, 159, 86);
@@ -269,8 +257,12 @@ p, h1, h3,h5{
   color: white;
   font-weight: 600;
 }
-
-/* Swiper class */
+/*=============== CARD DES FORMATIONS ===============*/
+.formation_Title{
+  display: flex;
+  justify-content: center;
+}
+/*=============== Swiper class ===============*/
 .swiper-button-prev:after,
 .swiper-button-next:after {
   content: "";
@@ -302,7 +294,7 @@ p, h1, h3,h5{
   background-color: var(--second-color);
 }
 
-/* FOOTER */
+/* =============== FOOTER =============== */
 .footer-contact {
   display: flex;
   justify-content: space-between;
@@ -371,7 +363,7 @@ p, h1, h3,h5{
   padding-top: 650px;
 }
 
-/* MODAL */
+/*=============== MODAL ===============*/
 .modal .btn-close {
   background-color: #ffffffbd;
   border: #000 1px solid;
