@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const modalClose = modal ? modal.querySelector('.modal-close') : null;
 
     // Vérifiez que les éléments existent avant de continuer
-    if (!infoBtn || !infoLabel || !modal ) {
+    if (!infoBtn || !modal ) {
       return;
     }
 

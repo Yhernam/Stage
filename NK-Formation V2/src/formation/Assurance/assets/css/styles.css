@@ -265,7 +265,8 @@ h1{
 .container{
   display: block;
   background-color: rgb(237, 227, 204) !important; 
-  border-radius: 100px;
+  border-radius: 20px;
+  
 }
 .card__content {
 
@@ -280,8 +281,9 @@ h1{
 }
 .container__Title{
   position: relative;
+  font-family: 'Poppins', sans-serif;
   left: 7%;
-  top: 0%;
+  top: 100%;
 }
 
 
