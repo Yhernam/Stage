@@ -35,12 +35,12 @@ let swiperCards4 = initSwiper(".swiper4", ".swiper-pagination", ".swiper-button-
 let swiperCards5 = initSwiper(".swiper5", ".swiper-pagination", ".swiper-button-next", ".swiper-button-prev");
 
 document.addEventListener("DOMContentLoaded", function () {
-  const articles = document.querySelectorAll('.card__article');
+  const articles = document.querySelectorAll('.card__article_Formation');
 
   articles.forEach(article => {
     const infoBtn = article.querySelector('.info-btn');
     const infoLabel = article.querySelector('.info-label');
-    const modal = article.querySelector('.info-modal');
+    const modal = article.querySelector('.info-modal_Formation');
     const modalClose = modal ? modal.querySelector('.modal-close') : null;
 
     // Vérifiez que les éléments existent avant de continuer
