@@ -134,3 +134,61 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+
+// =================== DEPLIANT MODULE => CHANGER CARD  =================== //
+document.addEventListener('DOMContentLoaded', () => {
+  const moduleSelectElements = document.querySelectorAll('.modules-dropdown');
+
+  moduleSelectElements.forEach(selectElement => {
+      selectElement.addEventListener('change', (event) => {
+          const selectedModules = event.target.value;
+          const cardDataElement = event.target.closest('.card__data_Formation');
+
+          updateCardContent(cardDataElement, selectedModules);
+      });
+  });
+
+  function updateCardContent(cardDataElement, selectedModules) {
+      const descriptionList = cardDataElement.querySelector('.card__description_Formation');
+      const learnMoreButton = cardDataElement.querySelector('.card__button_Formation');
+
+      let hours, modulesText, price, description, learnMoreLink;
+
+      switch(selectedModules) {
+          case '1':
+              hours = '57h';
+              modulesText = '5 Modules';
+              description = 'Les Assurances de Personnes';
+              learnMoreLink = '#';
+              break;
+          case '2':
+              hours = '37h';
+              modulesText = '6 Modules';
+              description = '<strong>Les assurances de personnes</strong><br> assurances vie et capitalisation';
+              learnMoreLink = '#';
+              break;
+          case '3':
+              hours = '43h';
+              modulesText = '8 Modules';
+              description = '<strong>Les assurances de personnes</strong><br> les contrats collectifs';
+              learnMoreLink = '#';
+              break;
+          case '4':
+              hours = '27h';
+              modulesText = '2 Modules';
+              description = 'Les assurances de biens et de responsabilité';
+              learnMoreLink = '#';
+              break;
+          default:
+              return;
+      }
+
+      // Met à jour les éléments de la card
+      descriptionList.querySelector('li:nth-child(1)').innerHTML = `<img src="assets/img/assurance/clock.svg" alt="">${hours}<br>`;
+      descriptionList.querySelector('li:nth-child(2)').innerHTML = `<img src="assets/img/assurance/chapter.png" alt="">${modulesText}`;
+      descriptionList.querySelector('.info-label').innerHTML = description;
+      
+      learnMoreButton.setAttribute('href', learnMoreLink);
+  }
+});
