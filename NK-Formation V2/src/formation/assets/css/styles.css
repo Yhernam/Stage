@@ -23,9 +23,7 @@
 }
 
 /*=============== BASE ===============*/
-.pdt{
-  padding-top: 550px;
-}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -258,6 +256,13 @@ a {
   font-weight: 600;
 }
 /*=============== CARD DES FORMATIONS ===============*/
+.pdt{
+  display: block;
+  position: relative;
+  background-color: rgb(237, 227, 204) !important;
+  border-radius: 20px;
+  top: 42em;
+}
 .formation_Title{
   display: flex;
   justify-content: center;
@@ -416,8 +421,9 @@ a {
   box-shadow: 0 0 10px #515bd4;
 }
 .footer-infos {
-  margin-bottom: 150px;
-  padding-top: 650px;
+  position: relative;
+  top: 50em;
+  padding-bottom:150px ;
 }
 
 /*=============== MODAL ===============*/
