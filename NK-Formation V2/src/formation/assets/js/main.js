@@ -1,6 +1,6 @@
 function initSwiper(containerSelector, paginationSelector, nextButtonSelector, prevButtonSelector, breakpoints) {
   return new Swiper(containerSelector + " .card__content", {
-    loop: true,
+    loop: false,
     spaceBetween: 32,
     grabCursor: true,
 

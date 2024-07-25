@@ -220,7 +220,7 @@ pdt
 .card__content {
   margin-inline: 1.75rem;
   border-radius: 1.25rem;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .card__article {
