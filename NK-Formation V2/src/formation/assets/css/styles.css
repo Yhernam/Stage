@@ -227,6 +227,7 @@ pdt
    /* Remove after adding swiper js */
   border-radius: 1.25rem;
   overflow: hidden;
+  height: 35em;
 }
 
 .card__image {
@@ -240,6 +241,7 @@ pdt
   text-align: center;
   position: relative;
   z-index: 10;
+  height: 300px;
 }
 .card__img {
   margin: 0 auto;
@@ -257,7 +259,7 @@ pdt
 }
 .card__button {
   display: inline-block;
-  background-color: rgb(196, 159, 86);
+  background: linear-gradient(to right, #0017A1, #011378);
   padding: .75rem 1.5rem;
   border-radius: .25rem;
   color: white;
@@ -275,6 +277,8 @@ pdt
 .formation_Title{
   display: flex;
   justify-content: center;
+  font-weight: 800;
+  text-shadow: 0 0 15px #000000d3;
 }
 .card__article_Formation {
   border-radius: 1.25rem;
@@ -311,7 +315,7 @@ pdt
 }
 .card__button_Formation {
   display: inline-block;
-  background-color: var(--dark-color);
+  background: linear-gradient(to right, #0017A1, #011378);
   padding: .75rem 1.5rem;
   border-radius: .25rem;
   color: white;
