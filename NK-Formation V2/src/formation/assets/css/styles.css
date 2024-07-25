@@ -352,17 +352,17 @@ pdt
 .swiper-button-next {
   width: initial;
   height: initial;
-  font-size: 3rem;
-  color: var(--second-color);
+  font-size: 5rem;
+  color: black;
   display: none;
 }
 
 .swiper-button-prev {
-  left: 0;
+  left: -20px;
 }
 
 .swiper-button-next {
-  right: 0;
+  right: 20px;
 }
 
 .swiper-pagination-bullet {
