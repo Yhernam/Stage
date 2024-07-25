@@ -195,7 +195,16 @@ a {
 
 /* =============== Fin 1ère partie =============== */
 
-/*=============== CARD LISTE FOMRATION ===============*/
+/*=============== CARD LISTE FORMATION ===============*/
+
+.container__Title {
+  margin-top: 70px;
+  margin-left: 100px;
+  font-weight: 800;
+  text-shadow: 0 0 15px #000000d3;
+}
+
+pdt
 
 .carousel {
   display: flex;
@@ -205,8 +214,7 @@ a {
 }
 
 .card__container {
-  padding-block: 5rem;
-
+  padding-block: 3rem;
 }
 
 .card__content {
@@ -261,7 +269,8 @@ a {
   position: relative;
   background-color: rgb(237, 227, 204) !important;
   border-radius: 20px;
-  top: 42em;
+  top: 4em;
+  padding: 2rem;
 }
 .formation_Title{
   display: flex;
@@ -422,7 +431,7 @@ a {
 }
 .footer-infos {
   position: relative;
-  top: 50em;
+  top: 20em;
   padding-bottom:150px ;
 }
 
