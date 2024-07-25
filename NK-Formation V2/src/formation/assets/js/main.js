@@ -83,9 +83,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Remplacer l'image du bouton en fonction de la taille de la fenêtre
     function replaceImage() {
       if (window.innerWidth <= 768) {
-        infoBtn.src = 'assets/img/new-info.png'; // Remplacer par votre nouvelle image
+        infoBtn.src = 'assets/img/assurance/new-info.png'; // Remplacer par votre nouvelle image
       } else {
-        infoBtn.src = 'assets/img/info.svg'; // Image par défaut
+        infoBtn.src = 'assets/img/assurance/info.svg'; // Image par défaut
       }
     }
 
