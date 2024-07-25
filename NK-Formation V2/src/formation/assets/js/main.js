@@ -180,6 +180,91 @@ document.addEventListener('DOMContentLoaded', () => {
               description = 'Les assurances de biens et de responsabilité';
               learnMoreLink = '#';
               break;
+
+          case '5':
+              hours = '15h';
+              modulesText = '2 Modules';
+              description = "Les assurances de Personnes + Le Plan d'Épargne Salariale";
+              learnMoreLink = '#';
+              break;
+          case '6':
+              hours = '15h';
+              modulesText = '2 Modules';
+              description = "Les assurances IARD + Le Plan d'Épargne Salariale";
+              learnMoreLink = '#';
+              break;
+          case '7':
+              hours = '15h';
+              modulesText = '2 Modules';
+              description = "RGPD + L'assurance Emprunteur";
+              learnMoreLink = '#';
+              break;
+          case '8':
+              hours = '15h';
+              modulesText = '2 Modules';
+              description = 'Les Médias Sociaux + Les assurances IARD';
+              learnMoreLink = '#';
+              break;
+          case '9':
+                hours = '15h';
+                modulesText = '2 Modules';
+                description = "Techniques de Vente + Le Plan d'Épargne Salariale";
+                learnMoreLink = '#';
+                break;
+            case '10':
+                hours = '15h';
+                modulesText = '2 Modules';
+                description = 'Techniques de Vente + Prévention et Conformité';
+                learnMoreLink = '#';
+                break;
+            case '11':
+                hours = '15h';
+                modulesText = '2 Modules';
+                description = 'Techniques de Vente + Les Médias Sociaux';
+                learnMoreLink = '#';
+                break;
+            case '12':
+                hours = '15h';
+                modulesText = '2 Modules';
+                description = 'Les assurances de Personnes + Les Médias Sociaux';
+                learnMoreLink = '#';
+                break;
+            case '13':
+                hours = '15h';
+                modulesText = '2 Modules';
+                description = 'Les assurances IARD + Prévention et Conformité';
+                learnMoreLink = '#';
+                break;
+            case '14':
+                hours = '15h';
+                modulesText = '2 Modules';
+                description = 'Les assurances de Personnes + Prévention et Conformité';
+                learnMoreLink = '#';
+                break;
+            case '15':
+                hours = '15h';
+                modulesText = '2 Modules';
+                description = "L'environnement de la Distribution d'assurance et ses Évolutions + Le Plan d'Épargne Salariale";
+                learnMoreLink = '#';
+                break;
+            case '16':
+                hours = '15h';
+                modulesText = '2 Modules';
+                description = "L'environnement de la Distribution d'assurance et ses Évolutions + Prévention et Conformité";
+                learnMoreLink = '#';
+                break;
+            case '17':
+                hours = '15h';
+                modulesText = '2 Modules';
+                description = "L'environnement de la Distribution d'assurance et ses Évolutions + Les Médias Sociaux";
+                learnMoreLink = '#';
+                break;
+            case '18':
+                  hours = '15h';
+                  modulesText = '2 Modules';
+                  description = "L'assurance Vie et l'Épargne Retraite + L'assurance Emprunteur";
+                  learnMoreLink = '#';
+                  break;
           default:
               return;
       }
