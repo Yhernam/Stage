@@ -265,6 +265,91 @@ document.addEventListener('DOMContentLoaded', () => {
                   description = "L'assurance Vie et l'Épargne Retraite + L'assurance Emprunteur";
                   learnMoreLink = '#';
                   break;
+
+            case '19':
+                hours = '16h';
+                modulesText = '2 Modules';
+                description = 'Parcours Financement immobilier + Prêts locatifs';
+                learnMoreLink = '#';
+                break;
+            case '20':
+                  hours = '16h';
+                  modulesText = '2 Modules';
+                  description = "Parcours Garanties immobilières (+Techniques de vente)";
+                  learnMoreLink = '#';
+                  break;
+            case '21':
+                  hours = '16h';
+                  modulesText = '2 Modules';
+                  description = 'Parcours Rachat de crédit';
+                  learnMoreLink = '#';
+                  break;
+            case '22':
+                  hours = '16h';
+                  modulesText = '2 Modules';
+                  description = 'Parcours Financement immobilier + Protection et assurance Emprunteur';
+                  learnMoreLink = '#';
+                  break;
+            case '23':
+                  hours = '16h';
+                  modulesText = '2 Modules';
+                  description = 'Parcours Crédit immobilier';
+                  learnMoreLink = '#';
+                  break;
+            case '24':
+                  hours = '16h';
+                  modulesText = '2 Modules';
+                  description = 'Parcours Financement immobilier + Prêts viagers hypothécaires et hypothèques';
+                  learnMoreLink = '#';
+                  break;
+            case '25':
+                  hours = '16h';
+                  modulesText = '2 Modules';
+                  description = 'Parcours Financement immobilier + Réseaux Sociaux RGPD';
+                  learnMoreLink = '#';
+                  break;
+            case '26':
+                  hours = '16h';
+                  modulesText = '2 Modules';
+                  description = 'Défiscalisation';
+                  learnMoreLink = '#';
+                  break;
+            case '27':
+                  hours = '16h';
+                  modulesText = '2 Modules';
+                  description = 'VEFA';
+                  learnMoreLink = '#';
+                  break;
+            case '28':
+                  hours = '16h';
+                  modulesText = '2 Modules';
+                  description = 'SCI';
+                  learnMoreLink = '#';
+                  break;
+            case '29':
+                    hours = '16h';
+                    modulesText = '2 Modules';
+                    description = 'Parcours Réseaux Sociaux';
+                    learnMoreLink = '#';
+                    break;
+            case '30':
+                  hours = '16h';
+                  modulesText = '2 Modules';
+                  description = 'Parcours Force de vente';
+                  learnMoreLink = '#';
+                  break;
+            case '31':
+                  hours = '16h';
+                  modulesText = '2 Modules';
+                  description = 'Copropriété';
+                  learnMoreLink = '#';
+                  break;
+            case '32':
+                    hours = '16h';
+                    modulesText = '2 Modules';
+                    description = 'Parcours Rac Consommation';
+                    learnMoreLink = '#';
+                    break;
           default:
               return;
       }
