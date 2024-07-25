@@ -270,6 +270,7 @@ pdt
   display: block;
   position: relative;
   background-color: rgb(237, 227, 204) !important;
+  background: linear-gradient(to right, rgb(196, 159, 86), rgb(237, 227, 204));
   border-radius: 20px;
   top: 4em;
   padding: 2rem;
@@ -281,9 +282,13 @@ pdt
   text-shadow: 0 0 15px #000000d3;
 }
 .card__article_Formation {
+  background: linear-gradient(to right, rgb(196, 159, 86), rgb(237, 227, 204));
+  border: 2px solid rgb(196, 159, 86);
   border-radius: 1.25rem;
   overflow: hidden;
   padding: 2em;
+  border: 2px solid  rgb(196, 159, 86); /* Border color and width */
+  box-shadow: 10px 10px rgb(196, 159, 86);
 }
 .card__Title__Formation{
   display: flex;
