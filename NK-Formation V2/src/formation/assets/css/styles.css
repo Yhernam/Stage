@@ -228,6 +228,8 @@ pdt
   border-radius: 1.25rem;
   overflow: hidden;
   height: 35em;
+  display: flex;
+  flex-direction: column;
 }
 
 .card__image {
@@ -242,6 +244,9 @@ pdt
   position: relative;
   z-index: 10;
   height: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 .card__img {
   margin: 0 auto;
@@ -256,6 +261,7 @@ pdt
 .card__description {
   font-weight: 500;
   margin-bottom: 1.75rem;
+  flex-grow: 1;
 }
 .card__button {
   display: inline-block;
@@ -276,6 +282,8 @@ pdt
   padding: 2rem;
 }
 .formation_Title{
+  margin-top: 100px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   font-weight: 800;
@@ -487,7 +495,7 @@ pdt
   }
 }
 
-@media(max-width: 500px){
+@media(max-width: 768px){
   .nav .logo,
   .nav .name {
   font-size: 0.8rem;
@@ -521,6 +529,10 @@ pdt
   }
   .footer-contact svg {
     width: 70%;
+  }
+
+  .info-section .info_data {
+    margin: 100px;
   }
 }
 
