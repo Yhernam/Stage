@@ -38,9 +38,19 @@ const breakpointsSwiper2 = {
   }
 };
 
+const breakpointsSwiper3 = {
+  600: {
+    slidesPerView: 1,
+  },
+  991: {
+    slidesPerView: 2,
+  },
+};
+
 // Initialisez chaque swiper avec des breakpoints différents
 let swiperCards1 = initSwiper(".swiper1", ".swiper-pagination", ".swiper-button-next", ".swiper-button-prev", breakpointsSwiper1);
 let swiperCards2 = initSwiper(".swiper2", ".swiper-pagination", ".swiper-button-next", ".swiper-button-prev", breakpointsSwiper2);
+let swiperCards3 = initSwiper(".swiper3", ".swiper-pagination", ".swiper-button-next", ".swiper-button-prev", breakpointsSwiper3);
 
 
 
