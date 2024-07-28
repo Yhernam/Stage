@@ -273,7 +273,7 @@ pdt
 }
 /*=============== CARD DES FORMATIONS ===============*/
 .pdt{
-  display: block;
+  display: none;
   position: relative;
   background-color: rgb(237, 227, 204) !important;
   background: linear-gradient(to right, rgb(196, 159, 86), rgb(237, 227, 204));

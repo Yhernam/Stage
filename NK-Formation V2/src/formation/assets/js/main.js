@@ -56,22 +56,19 @@ let swiperCards3 = initSwiper(".swiper3", ".swiper-pagination", ".swiper-button-
 
 
 // =================== SLIDERS => HIDE AND SHOW =================== //
-var div = document.getElementById('main');
-var display = 0;
+    // Array of IDs to be controlled
+    const controlledIds = ['first', 'second', 'third','fourth','fifth','sixth','seventh','eighth','ninth','tenth','eleventh','twelfth','thirteenth','fourteenth','fifteenth','sixteenth'];
 
-function hideShow()
-{
-  if(display == 1)
-  {
-    div.style.display = 'block';
-    display = 0;
-  }
-  else
-  {
-    div.style.display = 'none';
-    display = 1;
-  }
-}
+    function hideShow(id) {
+      if (controlledIds.includes(id)) {
+        var div = document.getElementById(id);
+        if (div.style.display === 'none') {
+          div.style.display = 'block';
+        } else {
+          div.style.display = 'none';
+        }
+      }
+    }
 
 
 // =================== MODAL => HIDE AND SHOW  =================== //
