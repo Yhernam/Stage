@@ -21,37 +21,86 @@ function initSwiper(containerSelector, paginationSelector, nextButtonSelector, p
 
 // Définissez les breakpoints spécifiques pour chaque swiper
 const breakpointsSwiper1 = {
-  600: {
-    slidesPerView: 1,
-  },
-  991: {
-    slidesPerView: 2,
-  },
+  600: {slidesPerView: 1,},
+  991: {slidesPerView: 2,},
 };
-
 const breakpointsSwiper2 = {
-  600: {
-    slidesPerView: 2,
-  },
-  968: {
-    slidesPerView: 3,
-  }
+  600: {slidesPerView: 2,},
+  968: {slidesPerView: 3,}
 };
-
 const breakpointsSwiper3 = {
-  600: {
-    slidesPerView: 1,
-  },
-  991: {
-    slidesPerView: 2,
-  },
+  600: {slidesPerView: 1,},
+  991: {slidesPerView: 2,},
 };
-
+const breakpointsSwiper4 = {
+  600: {slidesPerView: 1,},
+  991: {slidesPerView: 2,},
+};
+const breakpointsSwiper5 = {
+  600: {slidesPerView: 1,},
+  991: {slidesPerView: 2,},
+};
+const breakpointsSwiper6 = {
+  600: {slidesPerView: 1,},
+  991: {slidesPerView: 2,},
+};
+const breakpointsSwiper7 = {
+  600: {slidesPerView: 1,},
+  991: {slidesPerView: 2,},
+};
+const breakpointsSwiper8 = {
+  600: {slidesPerView: 1,},
+  991: {slidesPerView: 2,},
+};
+const breakpointsSwiper9 = {
+  600: {slidesPerView: 1,},
+  991: {slidesPerView: 2,},
+};
+const breakpointsSwiper11 = {
+  600: {slidesPerView: 1,},
+  991: {slidesPerView: 2,},
+};
+const breakpointsSwiper12 = {
+  600: {slidesPerView: 1,},
+  991: {slidesPerView: 2,},
+};
+const breakpointsSwiper13 = {
+  600: {slidesPerView: 1,},
+  991: {slidesPerView: 2,},
+};
+const breakpointsSwiper14 = {
+  600: {slidesPerView: 1,},
+  991: {slidesPerView: 2,},
+};
+const breakpointsSwiper15 = {
+  600: {slidesPerView: 1,},
+  991: {slidesPerView: 2,},
+};
+const breakpointsSwiper16 = {
+  600: {slidesPerView: 1,},
+  991: {slidesPerView: 2,},
+};
+const breakpointsSwiper10 = {
+  600: {slidesPerView: 1,},
+  991: {slidesPerView: 2,},
+};
 // Initialisez chaque swiper avec des breakpoints différents
 let swiperCards1 = initSwiper(".swiper1", ".swiper-pagination", ".swiper-button-next", ".swiper-button-prev", breakpointsSwiper1);
 let swiperCards2 = initSwiper(".swiper2", ".swiper-pagination", ".swiper-button-next", ".swiper-button-prev", breakpointsSwiper2);
 let swiperCards3 = initSwiper(".swiper3", ".swiper-pagination", ".swiper-button-next", ".swiper-button-prev", breakpointsSwiper3);
-
+let swiperCards4 = initSwiper(".swiper4", ".swiper-pagination", ".swiper-button-next", ".swiper-button-prev", breakpointsSwiper4);
+let swiperCards5 = initSwiper(".swiper5", ".swiper-pagination", ".swiper-button-next", ".swiper-button-prev", breakpointsSwiper5);
+let swiperCards6 = initSwiper(".swiper6", ".swiper-pagination", ".swiper-button-next", ".swiper-button-prev", breakpointsSwiper6);
+let swiperCards7 = initSwiper(".swiper7", ".swiper-pagination", ".swiper-button-next", ".swiper-button-prev", breakpointsSwiper7);
+let swiperCards8 = initSwiper(".swiper8", ".swiper-pagination", ".swiper-button-next", ".swiper-button-prev", breakpointsSwiper8);
+let swiperCards9 = initSwiper(".swiper9", ".swiper-pagination", ".swiper-button-next", ".swiper-button-prev", breakpointsSwiper9);
+let swiperCards10 = initSwiper(".swiper10", ".swiper-pagination", ".swiper-button-next", ".swiper-button-prev", breakpointsSwiper10);
+let swiperCards11 = initSwiper(".swiper11", ".swiper-pagination", ".swiper-button-next", ".swiper-button-prev", breakpointsSwiper11);
+let swiperCards12 = initSwiper(".swiper12", ".swiper-pagination", ".swiper-button-next", ".swiper-button-prev", breakpointsSwiper12);
+let swiperCards13 = initSwiper(".swiper13", ".swiper-pagination", ".swiper-button-next", ".swiper-button-prev", breakpointsSwiper13);
+let swiperCards14 = initSwiper(".swiper14", ".swiper-pagination", ".swiper-button-next", ".swiper-button-prev", breakpointsSwiper14);
+let swiperCards15 = initSwiper(".swiper15", ".swiper-pagination", ".swiper-button-next", ".swiper-button-prev", breakpointsSwiper15);
+let swiperCards16 = initSwiper(".swiper16", ".swiper-pagination", ".swiper-button-next", ".swiper-button-prev", breakpointsSwiper16);
 
 
 
