@@ -154,7 +154,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const learnMoreButton = cardDataElement.querySelector('.card__button_Formation');
 
       let hours, modulesText, price, description, learnMoreLink;
-
+// Changer de méthode, par autre chose que de l'injection html
+// faire comme pour l'apparition des sliders, voir pourquoi l'injection html n'est pas bien
       switch(selectedModules) {
           case '1':
               hours = '57h';
@@ -358,7 +359,6 @@ document.addEventListener('DOMContentLoaded', () => {
       descriptionList.querySelector('li:nth-child(1)').innerHTML = `<img src="assets/img/assurance/clock.svg" alt="">${hours}<br>`;
       descriptionList.querySelector('li:nth-child(2)').innerHTML = `<img src="assets/img/assurance/chapter.png" alt="">${modulesText}`;
       descriptionList.querySelector('.info-label').innerHTML = description;
-      
       learnMoreButton.setAttribute('href', learnMoreLink);
   }
 });
