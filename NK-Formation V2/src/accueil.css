@@ -480,56 +480,43 @@ nav li:first-child {
 }
 
 /* MEDIA QUERIES */
-@media(max-width: 800px){
-  .hideOnMobile{
-    display: none;
-  }
-  .menu-button{
-    display: block;
-  }
-}
-
-@media(max-width: 500px){
-  .nav .name {
-  font-size: 0.8rem;
-  }
+@media (max-width: 1300px) {
   .presentation {
-    margin: 1px;
+    margin: 5px;
   }
   .presentation .title {
     font-size: 2rem;
   }
 
-  .sidebar{
-    width: 100%;
-  }
-  .logo{
-    width: 1500%;
-  }
-
   .services {
-    padding: 1px;
+    margin: 50px;
+    padding: 10px;
   }
   .services h1 {
     font-size: 1.5rem;
+    margin: 50px;
   }
 
   .partenaires {
-    padding: 1px;
+    margin: 50px;
+    padding: 10px;
   }
   .partenaires h1 {
     font-size: 1.5rem;
+    margin: 50px;
   }
 
   .certifications {
-    padding: 1px;
+    margin: 50px;
+    padding: 10px;
   }
   .certifications h1 {
     font-size: 1.5rem;
+    margin: 50px;
   }
   .certifications img {
     margin-top: 50px;
-    width: 70%;
+    width: 90%;
   }
 
   .contact {
@@ -552,11 +539,162 @@ nav li:first-child {
   .contact .card .actions svg {
     width: 30px;
   }
-  .contact .card .mid-crad {
+  .contact .card .mid-card {
     height: 300px;
   }
   .contact .img-avatar {
-    left: 60px;
+    left: 40px;
+  }
+}
+
+@media(max-width: 800px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+
+  .presentation {
+    margin: 1px;
+  }
+  .presentation .title {
+    font-size: 2rem;
+  }
+
+  .services {
+    margin: 20px;
+    padding: 10px;
+  }
+  .services h1 {
+    font-size: 1.5rem;
+    margin: 50px;
+  }
+
+  .partenaires {
+    margin: 20px;
+    padding: 10px;
+  }
+  .partenaires h1 {
+    font-size: 1.5rem;
+    margin: 50px;
+  }
+
+  .certifications {
+    margin: 20px;
+    padding: 10px;
+  }
+  .certifications h1 {
+    font-size: 1.5rem;
+    margin: 50px;
+  }
+  .certifications img {
+    margin-top: 50px;
+    width: 90%;
+  }
+
+  .contact {
+    padding: 1px;
+  }
+  .contact .title {
+    font-size: 1.5rem;
+  }
+  .contact .card {
+    max-width: 300px;
+    height: 300px;
+  }
+  .contact .card .little-title {
+    padding: 0.5rem;
+    padding-right: 2rem;
+  }
+  .contact .card .desc {
+    font-size: 10px;
+  }
+  .contact .card .actions svg {
+    width: 30px;
+  }
+  .contact .card .mid-card {
+    height: 300px;
+  }
+  .contact .img-avatar {
+    left: 40px;
+  }
+}
+
+@media(max-width: 500px){
+  .nav .name {
+  font-size: 0.8rem;
+  }
+  .presentation {
+    margin: 1px;
+  }
+  .presentation .title {
+    font-size: 2rem;
+  }
+
+  .sidebar{
+    width: 100%;
+  }
+  .logo{
+    width: 1500%;
+  }
+
+  .services {
+    margin: 20px;
+    padding: 10px;
+  }
+  .services h1 {
+    font-size: 1.5rem;
+    margin: 50px;
+  }
+
+  .partenaires {
+    margin: 20px;
+    padding: 10px;
+  }
+  .partenaires h1 {
+    font-size: 1.5rem;
+    margin: 50px;
+  }
+
+  .certifications {
+    margin: 20px;
+    padding: 10px;
+  }
+  .certifications h1 {
+    font-size: 1.5rem;
+    margin: 50px;
+  }
+  .certifications img {
+    margin-top: 50px;
+    width: 60%;
+  }
+
+  .contact {
+    padding: 1px;
+  }
+  .contact .title {
+    font-size: 1.5rem;
+  }
+  .contact .card {
+    max-width: 300px;
+    height: 300px;
+  }
+  .contact .card .little-title {
+    padding: 0.5rem;
+    padding-right: 2rem;
+  }
+  .contact .card .desc {
+    font-size: 10px;
+  }
+  .contact .card .actions svg {
+    width: 30px;
+  }
+  .contact .card .mid-card {
+    height: 300px;
+  }
+  .contact .img-avatar {
+    left: 40px;
   }
 
   .footer-contact {
