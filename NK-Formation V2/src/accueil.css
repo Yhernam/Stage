@@ -9,13 +9,17 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #F0E6D1 !important;
+}
+
 /* NAVBAR */
 nav {
   display: flex;
   align-items: center;
   height: 100px;
-  background-image: linear-gradient(243deg,#0017A1 0, #011378 100%);
-  box-shadow: 0 0 10px #0017A1;
+  background-image: linear-gradient(243deg,#1f4e77 0, #1A4264 100%);
+  box-shadow: 0 0 10px #1A4264;
   font-size: larger;
 }
 nav .logo {
@@ -71,7 +75,7 @@ nav li:first-child {
   right: 0;
   height: 100vh;
   width: 250px;
-  background-image: linear-gradient(243deg,#0017A1 0, #011378 100%);
+  background-image: linear-gradient(243deg,#1f4e77 0, #1A4264 100%);
   backdrop-filter: blur(12px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   list-style: none;
@@ -109,15 +113,15 @@ nav li:first-child {
   text-decoration: none;
   padding: 18px 50px;
   border-radius: 30px;
-  background: #0017A1;
+  background-image: linear-gradient(243deg,#1f4e77 0, #1A4264 100%);
   display: inline-block;
   color: #fff;
   font-weight: 700;
   margin-top: 20px;
-  box-shadow: 0 0 15px #0017A1;
+  box-shadow: 0 0 15px #1A4264;
 }
 .presentation a:hover {
-  background-color: #011378;
+  background-color: #163652;
   transform: scale(1.05);
 }
 .presentation .text {
@@ -139,14 +143,14 @@ nav li:first-child {
   margin: 200px;
   padding: 100px;
   border-radius: 2%;
-  background-color: antiquewhite;
+  background-color: #E4D0AA;
   box-shadow: 0 0 10px #00000025;
 }
 .services h1 {
   margin-top: 30px;
   margin-bottom: 60px;
   font-weight: 800;
-  text-shadow: 0 0 15px #000000d3;
+  text-shadow: 0 0 15px #000;
 }
 .service-box {
   border-radius: 2%;
@@ -184,12 +188,12 @@ nav li:first-child {
   position: absolute;
   bottom: -20px;
   right: 20px;
-  background: #0017A1;
+  background: #1A4264;
   box-shadow: 0 0 10px #000;
 }
 .service-box a:hover {
   transform: scale(1.05);
-  background-color: #011378;
+  background-color: #163652;
 }
 .service-box a .bi {
   color: #fff;
@@ -197,8 +201,8 @@ nav li:first-child {
   padding-top: 6px;
 }
 .services span {
-  background: linear-gradient(to right, #0017A1, #011378);
-  text-shadow: 0 0 15px #0017A1;
+  background: linear-gradient(243deg,#1f4e77 0, #1A4264 100%);
+  text-shadow: 0 0 15px #1A4264;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -215,8 +219,8 @@ nav li:first-child {
   text-shadow: 0 0 15px #000000d3;
 }
 .partenaires span {
-  background: linear-gradient(to right, #0017A1, #011378);
-  text-shadow: 0 0 15px #0017A1;
+  background: linear-gradient(243deg,#1f4e77 0, #1A4264 100%);
+  text-shadow: 0 0 15px #1A4264;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -233,7 +237,7 @@ nav li:first-child {
   margin: 200px;
   padding: 100px;
   border-radius: 2%;
-  background-color: antiquewhite;
+  background-color: #E4D0AA;
   box-shadow: 0 0 10px #00000025;
 }
 .certifications h1 {
@@ -243,8 +247,8 @@ nav li:first-child {
   text-shadow: 0 0 15px #000000d3;
 }
 .certifications span {
-  background: linear-gradient(to right, #0017A1, #011378);
-  text-shadow: 0 0 15px #0017A1;
+  background: linear-gradient(243deg,#1f4e77 0, #1A4264 100%);
+  text-shadow: 0 0 15px #1A4264;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -275,7 +279,7 @@ nav li:first-child {
 .contact .card {
   background: #fff;
   border-radius: 2%;
-  box-shadow: 0 0 15px #0017A1;
+  box-shadow: 0 0 15px #1A4264;
   max-width: 500px;
   display: flex;
   flex-direction: row;
@@ -289,8 +293,8 @@ nav li:first-child {
 .contact .card .little-title {
   padding: 1rem;
   text-align: right;
-  color: #0017A1;
-  text-shadow: 0 0 15px #0017A1;
+  color: #1A4264;
+  text-shadow: 0 0 15px #1A4264;
   font-weight: bold;
   font-size: 12px;
 }
@@ -316,7 +320,7 @@ nav li:first-child {
   position: absolute;
   border-radius: 50%;
   border: 6px solid white;
-  background: linear-gradient(to right, #0017A1, #011378);
+  background-image: linear-gradient(243deg,#1f4e77 0, #1A4264 100%);
   top: 15px;
   left: 120px;
 }
@@ -332,19 +336,19 @@ nav li:first-child {
   height: 100%;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  background: linear-gradient(to right, #0017A1, #011378);
+  background-image: linear-gradient(243deg,#1f4e77 0, #1A4264 100%);
   background-position: bottom center;
   background-size: cover;
 }
 
 .actions a .cl {
   font-size: 24px;
-  color: #0017A1;
+  color: #1A4264;
   cursor: pointer;
   transition:.5s;
 }
 .actions a .cl:hover {
-  color: #011378;
+  color: #163652;
   transform: rotate(22deg);
 }
 
@@ -353,8 +357,8 @@ nav li:first-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to right, #0017A1, #011378);
-  box-shadow: 0 0 10px #0017A1;
+  background-image: linear-gradient(243deg,#1f4e77 0, #1A4264 100%);
+  box-shadow: 0 0 10px #1A4264;
   border-radius: 20px;
   position: fixed;
   width: 90%;
@@ -429,7 +433,7 @@ nav li:first-child {
   position: fixed;
   bottom: -20px;
   right: 20px;
-  background: #0017A1;
+  background: #1A4264;
   box-shadow: 0 0 8px #000;
 }
 .top a svg {
@@ -437,7 +441,7 @@ nav li:first-child {
   font-size: 25px !important;
 }
 .top:hover {
-  background: #011378;
+  background: #163652;
   transform: scale(1.05);
 }
 
@@ -448,7 +452,7 @@ nav li:first-child {
   box-shadow: 0 0 10px #fff;
 }
 .modal .modal-header {
-  background: linear-gradient(to right, #0017A1, #011378);
+  background-image: linear-gradient(243deg,#1f4e77 0, #1A4264 100%);
 }
 .modal .modal-title {
   color: #fff;
@@ -456,22 +460,22 @@ nav li:first-child {
   font-weight: 800;
 }
 .modal .modal-content {
-  box-shadow: 0 0 10px #0017A1;
+  box-shadow: 0 0 10px #1A4264;
 }
 .modal .input-group {
   margin-bottom: 15px;
 }
 .modal input {
-  box-shadow: 0 0 10px #0017A1;
+  box-shadow: 0 0 10px #1A4264;
 }
 .modal .btn-connexion {
-  background-color: #0017A1;
-  box-shadow: 0 0 10px #0017A1;
+  background-color: #1A4264;
+  box-shadow: 0 0 10px #1A4264;
   font-weight: 600;
   color: #fff;
 }
 .modal .btn-connexion:hover {
-  background-color: #011378;
+  background-color: #163652;
   color: #fff;
 }
 
