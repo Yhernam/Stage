@@ -14,8 +14,8 @@ nav {
   display: flex;
   align-items: center;
   height: 100px;
-  background-image: linear-gradient(243deg,#0017A1 0, #011378 100%);
-  box-shadow: 0 0 10px #0017A1;
+  background-image: linear-gradient(243deg,#1f4e77 0, #1A4264 100%);
+  box-shadow: 0 0 10px #1A4264;
   font-size: larger;
 }
 nav .logo {
@@ -71,7 +71,7 @@ nav li:first-child {
   right: 0;
   height: 100vh;
   width: 250px;
-  background-image: linear-gradient(243deg,#0017A1 0, #011378 100%);
+  background-image: linear-gradient(243deg,#1f4e77 0, #1A4264 100%);
   backdrop-filter: blur(12px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   list-style: none;
@@ -100,8 +100,8 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to right, #0017A1, #011378);
-  box-shadow: 0 0 10px #0017A1;
+  background-image: linear-gradient(243deg,#1f4e77 0, #1A4264 100%);
+  box-shadow: 0 0 10px #1A4264;
   border-radius: 20px;
   position: fixed;
   width: 90%;
@@ -170,7 +170,7 @@ footer {
   box-shadow: 0 0 10px #fff;
 }
 .modal .modal-header {
-  background: linear-gradient(to right, #0017A1, #011378);
+  background-image: linear-gradient(243deg,#1f4e77 0, #1A4264 100%);
 }
 .modal .modal-title {
   color: #fff;
@@ -178,22 +178,22 @@ footer {
   font-weight: 800;
 }
 .modal .modal-content {
-  box-shadow: 0 0 10px #0017A1;
+  box-shadow: 0 0 10px #1A4264;
 }
 .modal .input-group {
   margin-bottom: 15px;
 }
 .modal input {
-  box-shadow: 0 0 10px #0017A1;
+  box-shadow: 0 0 10px #1A4264;
 }
 .modal .btn-connexion {
-  background-color: #0017A1;
-  box-shadow: 0 0 10px #0017A1;
+  background-color: #1A4264;
+  box-shadow: 0 0 10px #1A4264;
   font-weight: 600;
   color: #fff;
 }
 .modal .btn-connexion:hover {
-  background-color: #011378;
+  background-color: #163652;
   color: #fff;
 }
 
@@ -257,7 +257,7 @@ footer {
 
 /* ============CORP==============*/
 body{
-  background-color: rgb(237, 227, 204) !important; 
+  background-color: #F0E6D1 !important; 
 }
 .title{
   text-align: center;
@@ -326,16 +326,16 @@ body{
 }
 /* couleur texte + titre */
 p, h1, h3,h5{
-  color: rgb(237, 227, 204);
+  color: #F0E6D1;
 }
 /* formulaire */
 .formulaire {
   max-width: 550px;
-  border: 2px solid  #011378;
+  border: 2px solid  #1A4264;
   padding: 2em;
   border-radius: 5%;
-  background-image: linear-gradient(243deg,#0017A1 0, #011378 100%);
-  box-shadow: 0 0 10px #0017A1;
+  background-image: linear-gradient(243deg,#1f4e77 0, #1A4264 100%);
+  box-shadow: 0 0 10px #1A4264;
 }
 .form-group textarea {
   padding-bottom: 50px;
@@ -346,29 +346,29 @@ p, h1, h3,h5{
 }
 .button_send .btn {
   text-decoration: none;
-  padding: 18px 50px;
+  padding: 12px 40px;
   border-radius: 30px;
   background: #fff;
   display: inline-block;
-  color: #0017A1;
+  color: #1A4264;
   font-weight: 700;
   margin-top: 20px;
   box-shadow: 0 0 15px #fff;
 }
 .button_send .btn:hover {
-  background-color: #011378;
+  background-color: #1A4264;
   transform: scale(1.05);
 }
   /* case input */
 .case{
   border-radius: 50px; /* Even more rounded corners */
   padding: 5px; /*changer taille input*/
-  border: 3px solid #011378;
+  border: 3px solid #1A4264;
   font-size: 15px; /* Default font size */
 }
 .case:focus {
   outline: none; /* Remove default outline */
-  border-color: #011378; /* Change border color on focus */
+  border-color: #1A4264; /* Change border color on focus */
   background-color: rgb(237, 227, 204); /* Change background color on focus */
   box-shadow: 0 0 5px rgb(196, 159, 86);; /* Add a blue glow on focus */
 }
@@ -377,12 +377,12 @@ p, h1, h3,h5{
 .info_data{
   list-style-type: none;
   position: relative;
-  border: 2px solid  #011378; /* Border color and width */
+  border: 2px solid  #1A4264; /* Border color and width */
   padding: 2em; /* Padding inside the border */
   margin: auto;
   border-radius: 50px;
-  background-image: linear-gradient(243deg,#0017A1 0, #011378 100%);
-  box-shadow: 0 0 10px #0017A1;
+  background-image: linear-gradient(243deg,#1f4e77 0, #1A4264 100%);
+  box-shadow: 0 0 10px #1A4264;
 }
 .information{
   padding:3rem ;
@@ -444,7 +444,7 @@ iframe{
   width: 100%;
 }
 .card__data{
-  background-image: linear-gradient(243deg,#0017A1 0, #011378 100%);
+  background-image: linear-gradient(243deg,#1f4e77 0, #1A4264 100%);
   padding: 1.5rem 2rem;
   border-radius: 1rem;
   text-align: center;
