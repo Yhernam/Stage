@@ -105,19 +105,38 @@ let swiperCards16 = initSwiper(".swiper16", ".swiper-pagination", ".swiper-butto
 
 
 // =================== SLIDERS => HIDE AND SHOW =================== //
-    // Array of IDs to be controlled
-    const controlledIds = ['first', 'second', 'third','fourth','fifth','sixth','seventh','eighth','ninth','tenth','eleventh','twelfth','thirteenth','fourteenth','fifteenth','sixteenth'];
+// Array of IDs to be controlled
+const controlledIds = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth', 'ninth', 'tenth', 'eleventh', 'twelfth', 'thirteenth', 'fourteenth', 'fifteenth', 'sixteenth'];
 
-    function hideShow(id) {
-      if (controlledIds.includes(id)) {
-        var div = document.getElementById(id);
-        if (div.style.display === 'none') {
-          div.style.display = 'block';
-        } else {
-          div.style.display = 'none';
+function hideShow(id) {
+  if (controlledIds.includes(id)) {
+    // Hide all other divs
+    controlledIds.forEach(otherId => {
+      if (otherId !== id) {
+        var otherDiv = document.getElementById(otherId);
+        if (otherDiv) {
+          otherDiv.style.display = 'none';
         }
       }
+    });
+
+    // Toggle the clicked div
+    var div = document.getElementById(id);
+    if (div) {
+      if (div.style.display === 'none') {
+        div.style.display = 'block';
+      } else {
+        div.style.display = 'none';
+      }
     }
+  }
+}
+controlledIds.forEach(id => {
+  var div = document.getElementById(id);
+  if (div) {
+    div.addEventListener('click', () => hideShow(id));
+  }
+});
 
 
 // =================== MODAL => HIDE AND SHOW  =================== //
