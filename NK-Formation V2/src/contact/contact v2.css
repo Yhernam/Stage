@@ -471,7 +471,7 @@ iframe{
   margin-bottom: -.75rem;
 }
 .card__img {
-  width: 19em;
+  width: 30em;
   margin: 0 auto;
   position: relative;
   z-index: 5;
@@ -481,6 +481,7 @@ iframe{
   border: 2px solid black;
   border-radius: 1.25rem !important;
   overflow: hidden;
+  width: 100%;
 }
 .card__data{
   background-image: linear-gradient(243deg,#0017A1 0, #011378 100%);
@@ -491,9 +492,13 @@ iframe{
   z-index: 10;
   flex-wrap: wrap;
 }
-.card__description {
-  font-weight: 500;
+.card-title {
+  font-weight: 700;
   margin-bottom: 1.75rem;
+  color: antiquewhite;
+}
+.card-text {
+  color: white;
 }
 .plus {
   margin-left: 200px;
@@ -505,78 +510,6 @@ iframe{
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-}
-.combo2{
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.c{
-  background-color: linear-gradient(to right,#159957,#155799);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative; /* Containing block for absolutely positioned children */
-  width: 300px; /* Match width to .speechb */
-  height: 230px; /* Match height to .speechb */
-  transform-style: preserve-3d; /* Ensure children are 3D transformed */
-  transition: transform 0.6s ease-in-out;
-}
-.speechb{
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  position: relative;
-  -moz-border-radius:12px;
-  -webkit-border-radius:12px;
-  border-radius:12px;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0 10px #00000025;
-}
-.speechb img {
-  width: 30%;
-}
-.speechb2::before{
-  content: '';
-  position: absolute;
-  top: -65px;
-  width: 0 ;
-  height: 0;
-  border-left: 13px solid transparent;
-  border-bottom: 66px solid white;
-  border-right: 13px solid transparent;
-}
-.speechb2{
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  position: relative;
-  -moz-border-radius:12px;
-  -webkit-border-radius:12px;
-  border-radius:12px;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0 10px #00000025;
-}
-.speechb2 img {
-  width: 30%;
-}
-.speechb::before {
-  content: '';
-  position: absolute;
-  top: -65px;
-  width: 0 ;
-  height: 0;
-  border-left: 13px solid transparent;
-  border-bottom: 66px solid white;
-  border-right: 13px solid transparent;
 }
 
 @media (max-width: 767px) {
