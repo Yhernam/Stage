@@ -50,9 +50,10 @@ nav {
   font-size: larger;
 }
 nav .logo {
-  width: 15%;
+  width: 16%;
   margin-top: 15px;
   margin-right: 15px;
+  margin-left: -10px;
 }
 nav .name {
   color: #fff;
