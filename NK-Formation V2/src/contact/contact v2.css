@@ -197,6 +197,13 @@ footer {
 }
 
 /* MEDIA QUERIES */
+@media(max-width: 1200px){
+  .container-fluid .plus {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
 @media(max-width: 800px){
   .hideOnMobile{
     display: none;
@@ -204,18 +211,17 @@ footer {
   .menu-button{
     display: block;
   }
+
+  .container-fluid .plus {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
 
 @media(max-width: 400px){
   .nav .logo,
   .nav .name {
   font-size: 0.8rem;
-  }
-  .presentation {
-    margin: 1px;
-  }
-  .presentation .title {
-    font-size: 2rem;
   }
 
   .sidebar{
@@ -225,56 +231,9 @@ footer {
     width: 100%;
   }
 
-  .services {
-    padding: 1px;
-  }
-  .services h1 {
-    font-size: 1.5rem;
-  }
-
-  .partenaires {
-    padding: 1px;
-  }
-  .partenaires h1 {
-    font-size: 1.5rem;
-  }
-
-  .certifications {
-    padding: 1px;
-  }
-  .certifications h1 {
-    font-size: 1.5rem;
-  }
-  .certifications img {
-    margin-top: 50px;
-    width: 70%;
-  }
-
-  .contact {
-    padding: 1px;
-  }
-  .contact .title {
-    font-size: 1.5rem;
-  }
-  .contact .card {
-    max-width: 300px;
-    height: 300px;
-  }
-  .contact .card .little-title {
-    padding: 0.5rem;
-    padding-right: 2rem;
-  }
-  .contact .card .desc {
-    font-size: 10px;
-  }
-  .contact .card .actions svg {
-    width: 30px;
-  }
-  .contact .card .mid-crad {
-    height: 300px;
-  }
-  .contact .img-avatar {
-    left: 60px;
+  .container-fluid .plus {
+    margin-left: 2px;
+    margin-right: 2px;
   }
 
   .footer-contact {
