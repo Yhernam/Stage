@@ -37,7 +37,7 @@ body {
   background-color: white;
   color: black;
 }
-p, h1, h3,h5{
+h1, h3,h5{
   color: black;
 }
 /* ==================== NAV-BAR ==================== */
@@ -202,7 +202,7 @@ a {
   margin-top: 70px;
   margin-left: 100px;
   font-weight: 800;
-  text-shadow: 0 0 15px #000000d3;
+  text-shadow: 0 0 8px #000000d3;
 }
 
 pdt
