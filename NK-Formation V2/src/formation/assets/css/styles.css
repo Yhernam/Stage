@@ -532,6 +532,12 @@ pdt
   }
 }
 
+@media (max-width: 600px) {
+  .card__article {
+    height: auto;
+  }
+}
+
 @media(max-width: 768px){
   .nav .logo,
   .nav .name {
