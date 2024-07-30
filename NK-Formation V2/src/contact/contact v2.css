@@ -489,3 +489,18 @@ iframe{
   width: 60%;
   height: auto;
 }
+
+/* SCROLLBAR*/
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: none;
+}
+::-webkit-scrollbar-thumb {
+  background: #1A4264;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #163652;
+}

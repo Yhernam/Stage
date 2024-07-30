@@ -420,31 +420,6 @@ nav li:first-child {
   margin-bottom: 150px;
 }
 
-/*TO THE TOP*/
-.top {
-  margin-bottom: 130px;
-  margin-right: 15px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: block;
-  text-align: center;
-  align-content: center;
-  position: fixed;
-  bottom: -20px;
-  right: 20px;
-  background: #1A4264;
-  box-shadow: 0 0 8px #000;
-}
-.top a svg {
-  color: #fff;
-  font-size: 25px !important;
-}
-.top:hover {
-  background: #163652;
-  transform: scale(1.05);
-}
-
 /* MODAL */
 .modal .btn-close {
   background-color: #ffffffbd;
@@ -479,8 +454,19 @@ nav li:first-child {
   color: #fff;
 }
 
+/* SCROLLBAR*/
 ::-webkit-scrollbar {
-  width: 0%;
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: none;
+}
+::-webkit-scrollbar-thumb {
+  background: #1A4264;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #163652;
 }
 
 /* MEDIA QUERIES */

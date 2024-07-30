@@ -509,6 +509,21 @@ pdt
   color: #fff;
 }
 
+/* SCROLLBAR*/
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: none;
+}
+::-webkit-scrollbar-thumb {
+  background: #1A4264;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #163652;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 320px) {
