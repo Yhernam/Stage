@@ -264,10 +264,10 @@ body{
 }
 .title_form{
   text-align: center;
-  color: white;
+  color: #000;
   margin-bottom: 30px;
   font-weight: 800;
-  text-shadow: 0 0 15px #fff;
+  text-shadow: 0 0 15px #000;
 }
 
 .social{
@@ -287,7 +287,8 @@ body{
 }
 /* HOVER liens hypertextes */
 .effet {
-  color: wheat;
+  color: #1A4264;
+  font-weight: 700;
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
@@ -302,7 +303,7 @@ body{
 }
 .effet:before {
   content: '';
-  background: white;
+  background-image: linear-gradient(243deg,#F0E6D1 0, #1A4264 100%);
   display: block;
   position: absolute;
   bottom: -3px;
@@ -313,29 +314,18 @@ body{
 }
 .effet:hover {
  background-position: 0;
- background-image: linear-gradient(
-    to right,
-    #1A4264,
-    #1A4264,
-    #1A4264 50%,
-    #000 50%
-  );
 }
 .effet:hover::before {
   width:100%;
 }
-/* couleur texte + titre */
-p, h1, h3,h5{
-  color: #F0E6D1;
-}
 /* formulaire */
 .formulaire {
   max-width: 550px;
-  border: 2px solid  #1A4264;
+  border: 2px solid #E4D0AA;
   padding: 2em;
-  border-radius: 5%;
-  background-image: linear-gradient(243deg,#1f4e77 0, #1A4264 100%);
-  box-shadow: 0 0 10px #1A4264;
+  border-radius: 20px;
+  background-color: #fff !important;
+  box-shadow: 10px 10px #E4D0AA;;
 }
 .form-group textarea {
   padding-bottom: 50px;
@@ -346,27 +336,27 @@ p, h1, h3,h5{
 }
 .button_send .btn {
   text-decoration: none;
-  padding: 12px 40px;
+  padding: 10px 40px;
+  border: none;
   border-radius: 30px;
-  background: #fff;
-  display: inline-block;
-  color: #1A4264;
-  font-weight: 700;
+  background-image: linear-gradient(243deg,#F0E6D1 0, #E4D0AA 100%);
+  color: #fff;
+  font-weight: 600;
   margin-top: 20px;
-  box-shadow: 0 0 15px #fff;
+  box-shadow: 0 0 15px #F0E6D1;
 }
 .button_send .btn:hover {
-  background-color: #1A4264;
+  color: #000;
   transform: scale(1.05);
 }
   /* case input */
-.case{
+form .case{
   border-radius: 50px; /* Even more rounded corners */
   padding: 5px; /*changer taille input*/
-  border: 3px solid #1A4264;
+  border: 2px solid #F0E6D1;
   font-size: 15px; /* Default font size */
 }
-.case:focus {
+form .case:focus {
   outline: none; /* Remove default outline */
   border-color: #1A4264; /* Change border color on focus */
   background-color: rgb(237, 227, 204); /* Change background color on focus */
@@ -377,12 +367,12 @@ p, h1, h3,h5{
 .info_data{
   list-style-type: none;
   position: relative;
-  border: 2px solid  #1A4264; /* Border color and width */
+  border: 2px solid #E4D0AA; /* Border color and width */
   padding: 2em; /* Padding inside the border */
   margin: auto;
   border-radius: 50px;
-  background-image: linear-gradient(243deg,#1f4e77 0, #1A4264 100%);
-  box-shadow: 0 0 10px #1A4264;
+  background-color: #fff !important; 
+  box-shadow: 10px 10px #E4D0AA;
 }
 .information{
   padding:3rem ;
@@ -498,4 +488,19 @@ iframe{
 .front-img {
   width: 60%;
   height: auto;
+}
+
+/* SCROLLBAR*/
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: none;
+}
+::-webkit-scrollbar-thumb {
+  background: #1A4264;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #163652;
 }
