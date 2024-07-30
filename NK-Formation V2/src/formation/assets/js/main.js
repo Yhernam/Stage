@@ -105,7 +105,6 @@ let swiperCards16 = initSwiper(".swiper16", ".swiper-pagination", ".swiper-butto
 
 
 // =================== SLIDERS => HIDE AND SHOW =================== //
-// Array of IDs to be controlled
 const controlledIds = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth', 'ninth', 'tenth', 'eleventh', 'twelfth', 'thirteenth', 'fourteenth', 'fifteenth', 'sixteenth'];
 
 function hideShow(id) {
@@ -123,7 +122,7 @@ function hideShow(id) {
     // Toggle the clicked div
     var div = document.getElementById(id);
     if (div) {
-      if (div.style.display === 'none') {
+      if (div.style.display === 'none' || div.style.display === '') {
         div.style.display = 'block';
       } else {
         div.style.display = 'none';
@@ -131,13 +130,27 @@ function hideShow(id) {
     }
   }
 }
+
+// Add event listeners to each controlled div
 controlledIds.forEach(id => {
   var div = document.getElementById(id);
   if (div) {
-    div.addEventListener('click', () => hideShow(id));
+    div.addEventListener('click', (event) => {
+      event.stopPropagation(); // Prevent the click event from bubbling up
+      hideShow(id);
+    });
   }
 });
 
+// Optional: To handle clicks outside of controlled divs to close all
+document.addEventListener('click', (event) => {
+  controlledIds.forEach(id => {
+    var div = document.getElementById(id);
+    if (div) {
+      div.style.display = 'none';
+    }
+  });
+});
 
 // =================== MODAL => HIDE AND SHOW  =================== //
 
