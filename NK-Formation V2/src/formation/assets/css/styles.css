@@ -156,13 +156,12 @@ a {
 }
 .info_data{
   position: relative;
-  border: 2px solid  #E4D0AA; /* Border color and width */
+  border: 2px solid #E4D0AA; /* Border color and width */
   padding: 2em; /* Padding inside the border */
   margin: auto;
   border-radius: 20px;
   background-color: #fff !important; 
-  box-shadow: 10px 10px #E4D0AA;;
-  
+  box-shadow: 10px 10px #E4D0AA;
 }
 
 /* ==================== style form ==================== */
@@ -174,14 +173,15 @@ a {
   text-decoration: none;
   padding: 10px 40px;
   border-radius: 30px;
-  background-image: linear-gradient(243deg,#1f4e77 0, #1A4264 100%);
+  background-image: linear-gradient(243deg,#F0E6D1 0, #E4D0AA 100%);
   color: #fff;
   font-weight: 600;
   margin-top: 20px;
-  box-shadow: 0 0 15px #1A4264;
+  box-shadow: 0 0 15px #F0E6D1;
 }
 .btn_send:hover {
   color: #000;
+  transform: scale(1.05);
 }
 
 .case{
