@@ -293,7 +293,7 @@ pdt
 .pdt{
   display: none;
   position: relative;
-  background-color: #F0E6D1 !important;
+  background-color: #E4D0AA !important;
   box-shadow: 0 0 10px #F0E6D1;
   border-radius: 20px;
   top: 4em;
@@ -309,11 +309,11 @@ pdt
 }
 .card__article_Formation {
   background: linear-gradient(to right, #E4D0AA, #F0E6D1);
-  border: 2px solid #E4D0AA;
+  border: 2px solid #fff;
   border-radius: 1.25rem;
   overflow: hidden;
   padding: 2em;
-  box-shadow: 10px 10px #E4D0AA;
+  box-shadow: 10px 10px #fff;
 }
 .card__Title__Formation{
   display: flex;
