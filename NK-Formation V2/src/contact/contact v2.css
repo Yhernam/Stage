@@ -433,6 +433,7 @@ iframe{
   border-radius: 1.25rem !important;
   overflow: hidden;
   width: 100%;
+  box-shadow: 0 0 15px #1a41647b;
 }
 .card__data{
   background-image: linear-gradient(243deg,#1f4e77 0, #1A4264 100%);
