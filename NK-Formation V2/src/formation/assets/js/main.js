@@ -425,6 +425,57 @@ document.addEventListener('DOMContentLoaded', () => {
                     description = 'Parcours Rac Consommation';
                     learnMoreLink = '#';
                     break;
+
+            case '33':
+                      hours = '?h';
+                      modulesText = '? Modules';
+                      description = 'Débutant';
+                      learnMoreLink = '#';
+                      break;
+             case '34':
+                      hours = '?h';
+                      modulesText = '? Modules';
+                      description = 'Intermédiaire';
+                      learnMoreLink = '#';
+                      break;
+             case '35':
+                        hours = '?h';
+                        modulesText = '? Modules';
+                        description = 'Confirmé';
+                        learnMoreLink = '#';
+                        break;
+
+            case '36':
+                          hours = '?h';
+                          modulesText = '? Modules';
+                          description = 'Débutant';
+                          learnMoreLink = '#';
+                          break;
+            case '37':
+                          hours = '?h';
+                          modulesText = '? Modules';
+                          description = 'Intermédiaire';
+                          learnMoreLink = '#';
+                          break;
+          case '38':
+                            hours = '?h';
+                            modulesText = '? Modules';
+                            description = 'Confirmé';
+                            learnMoreLink = '#';
+                            break;
+          
+          case '39':
+                              hours = '?h';
+                              modulesText = '? Modules';
+                              description = 'Débutant';
+                              learnMoreLink = '#';
+                              break;
+          case '40':
+                                hours = '?h';
+                                modulesText = '? Modules';
+                                description = 'Confirmé';
+                                learnMoreLink = '#';
+                                break;
           default:
               return;
       }
