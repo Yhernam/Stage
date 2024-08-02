@@ -106,7 +106,7 @@ let swiperCards16 = initSwiper(".swiper16", ".swiper-pagination", ".swiper-butto
 
 // =================== SLIDERS => HIDE AND SHOW =================== //
 // Array of IDs to be controlled
-const controlledIds = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth', 'ninth', 'tenth', 'eleventh', 'twelfth', 'thirteenth', 'fourteenth', 'fifteenth', 'sixteenth'];
+const controlledIds = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth', 'ninth', 'tenth', 'eleventh', 'twelfth', 'thirteenth', 'fourteenth', 'fifteenth'];
 
 function hideShow(id) {
   if (controlledIds.includes(id)) {
